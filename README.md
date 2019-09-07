@@ -6,8 +6,12 @@ I had trouble with using SpeechRecognition initially in Pycharm with Anaconda.  
 seems that one is better off using Pycharms bundled virtual env in general.
 After I removed Anaconda from my system, it just worked.  
 
-The "Say" program is added using sudo apt install.  It works very well.  
-I'd be interested in seeing how to change the voice.
+Add The "Say" program is added using sudo apt install.  It works very well.  
+I'd be interested in seeing how to change the voice.  
+
+sudo apt-get install gnustep-gui-runtime
+
+Then test it by pwdsay "hello"
 
 I haven't started working on commands yet.  So far, Otto can 
 listen, convert speech to text, and use that text to fire off commands.
