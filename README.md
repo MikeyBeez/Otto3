@@ -1,8 +1,8 @@
 # Otto3
 This is a very simple voice assistant that uses SpeechRecognizer.  
-Use pip to install SpeechRecognizer. 
+Use pip to install SpeechRecognition. 
 
-I had trouble with using SpeechRecognizer initially in Pycharm with Anaconda.  It
+I had trouble with using SpeechRecognition initially in Pycharm with Anaconda.  It
 seems that one is better off using Pycharms bundled virtual env in general.
 After I removed Anaconda from my system, it just worked.  
 
