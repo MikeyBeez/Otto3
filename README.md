@@ -6,12 +6,16 @@ Add The GNUstep Speech Engine.  It works very well.
 I'd be interested in seeing how to change the voice.  
 
 sudo apt-get install gnustep-gui-runtime
+I may change this to use festvox for text to speech (TTS)  I think the voices are better.   
 
 Then test it by 
 say "hello"
 
 I haven't started working on commands yet.  So far, Otto can 
-listen, convert speech to text, and use that text to fire off commands.
+listen, convert speech to text, and use that text to fire off commands.  There are two main reasons 
+why I haven't really worked on commands.  First, I find the if then else structure unwieldy.  I want to write or find 
+something that will lookup a commands action directly from a database.  The other reason is I'm trying to discover what
+actions are better by voice.  My Echo already works fine for the weather, etc.  This is the sort of thing I have in mind:  https://www.youtube.com/watch?v=YRyYIIFKsdU    
 
 If this interests you, it's is a pretty good start for building a voice assistant.  
 It's easy code to understand, although I'll probably add a bunch of comments next to make 
