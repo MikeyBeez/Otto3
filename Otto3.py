@@ -11,9 +11,14 @@ import smtplib
 def talkToMe(text):
     # "speaks audio passed as argument"
 
-    print(text)
-    for line in text.splitlines():
-        os.system("echo " + text + "| gtts-cli - | play -t mp3 -")
+    print(mytext)
+    for line in mytext.splitlines():
+        text_to_speech = gTTS(text=mytext, lang='en')
+        text_to_speech.save('audio.mp3')
+        os.system('mpg123 audio.mp3')
+
+        
+    #os.system("echo " + text + "| gtts-cli - | play -t mp3 -")
 
     #  use the system's inbuilt say command instead of mpg123
     #  text_to_speech = gTTS(text=audio, lang='en')
