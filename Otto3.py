@@ -8,7 +8,7 @@ import smtplib
 # import requests
 # from weather import Weather
 
-def talkToMe(text):
+def talkToMe(mytext):
     # "speaks audio passed as argument"
 
     print(mytext)
