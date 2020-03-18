@@ -13,7 +13,7 @@ def talkToMe(audio):
 
     print(audio)
     for line in audio.splitlines():
-        os.system("cat " + audio + "| play -t mp3 -")
+        os.system("echo " + audio + "| play -t mp3 -")
 
     #  use the system's inbuilt say command instead of mpg123
     #  text_to_speech = gTTS(text=audio, lang='en')
