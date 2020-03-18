@@ -13,7 +13,7 @@ def talkToMe(audio):
 
     print(audio)
     for line in audio.splitlines():
-        os.system("say " + audio)
+        os.system("cat " + audio + "| play -t mp3 -")
 
     #  use the system's inbuilt say command instead of mpg123
     #  text_to_speech = gTTS(text=audio, lang='en')
@@ -27,7 +27,7 @@ def myCommand():
     r = sr.Recognizer()
 
     with sr.Microphone() as source:
-        print('Ready...')
+        print('Ready.sort of . . .\n ')
         r.pause_threshold = 1
         r.adjust_for_ambient_noise(source, duration=1)
         audio = r.listen(source)
