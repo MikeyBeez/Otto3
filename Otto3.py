@@ -1,4 +1,4 @@
-from gtts import gTTS
+from gtts import gTT
 import speech_recognition as sr
 import os
 # import re
@@ -8,12 +8,12 @@ import smtplib
 # import requests
 # from weather import Weather
 
-def talkToMe(audio):
+def talkToMe(text):
     # "speaks audio passed as argument"
 
-    print(audio)
-    for line in audio.splitlines():
-        os.system("echo " + audio + "| play -t mp3 -")
+    print(text)
+    for line in text.splitlines():
+        os.system("echo " + text + "| gtts-cli - | play -t mp3 -")
 
     #  use the system's inbuilt say command instead of mpg123
     #  text_to_speech = gTTS(text=audio, lang='en')
