@@ -1,4 +1,14 @@
 # Otto3
+
+First of all, I've made a video that should help with setting this up: https://www.youtube.com/watch?v=PwoZKKR6MRs
+
+I forked this repository, played with it a bit, didn't make much progress, then left it alone for 17 months.
+The video has me making progress.  This now runs somewhat.  First of all, I hate using a big if then else 
+statement.  It's just bad coding.  So I intend to fix that.  Even a case statement sucks.  Please let me
+know if you have some thoughts on this.  
+
+What follows is some old text that I'm leaving for now but will update or remove later.  The video works.
+
 This is a very simple voice assistant that uses SpeechRecognizer.
 I've had a lot of trouble setting up a working environment for Uberi SpeechRecognition, however.  Pyaudio needs to be working right first.  Then you can install speechrecognition.  There are instructions here https://github.com/Uberi/speech_recognition  Even then, I had to install pyaudio using pip and then pip install speechrecognition.  In the end I've got it working.      
 
