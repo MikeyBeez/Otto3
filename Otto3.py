@@ -17,9 +17,6 @@ def talkToMe(mytext):
         text_to_speech.save('audio.mp3')
         os.system('mpg123 audio.mp3')
 
-        
-
-
 def myCommand():
     # "listens for commands"
 
