@@ -18,12 +18,6 @@ def talkToMe(mytext):
         os.system('mpg123 audio.mp3')
 
         
-    #os.system("echo " + text + "| gtts-cli - | play -t mp3 -")
-
-    #  use the system's inbuilt say command instead of mpg123
-    #  text_to_speech = gTTS(text=audio, lang='en')
-    #  text_to_speech.save('audio.mp3')
-    #  os.system('mpg123 audio.mp3')
 
 
 def myCommand():
