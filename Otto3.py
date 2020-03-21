@@ -23,7 +23,7 @@ def myCommand():
     r = sr.Recognizer()
 
     with sr.Microphone() as source:
-        print('Ready.sort of . . .\n ')
+        print('Ready, sort of . . .\n ')
         r.pause_threshold = 1
         r.adjust_for_ambient_noise(source, duration=1)
         audio = r.listen(source)
