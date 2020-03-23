@@ -2,6 +2,9 @@
 
 First of all, I've made a video that should help with setting this up: https://www.youtube.com/watch?v=PwoZKKR6MRs
 
+There is a lot of good info on aiml here:  https://www.devdungeon.com/content/ai-chat-bot-python-aiml
+
+
 I forked this repository, played with it a bit, didn't make much progress, then left it alone for 17 months.
 The video has me making progress.  This now runs somewhat.  First of all, I hate using a big if then else 
 statement.  It's just bad coding.  So I intend to fix that.  Even a case statement sucks.  Please let me
