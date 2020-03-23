@@ -1,12 +1,33 @@
+#!/home/bard/miniconda3/envs/Otto/bin/python3
 from gtts import gTTS
 import speech_recognition as sr
 import os
+import aiml
 # import re
 import webbrowser
 import smtplib
 
 # import requests
 # from weather import Weather
+
+BRAIN_FILE="brain.dump"
+
+k = aiml.Kernel()
+
+# To increase the startup speed of the bot it is
+# possible to save the parsed aiml files as a
+# dump. This code checks if a dump exists and
+# otherwise loads the aiml from the xml files
+# and saves the brain dump.
+if os.path.exists(BRAIN_FILE):
+    print("Loading from brain file: " + BRAIN_FILE)
+    k.loadBrain(BRAIN_FILE)
+else:
+    print("Parsing aiml files")
+    k.bootstrap(learnFiles="std-startup.aiml", commands="load aiml b")
+    print("Saving brain file: " + BRAIN_FILE)
+    k.saveBrain(BRAIN_FILE)
+
 
 def talkToMe(mytext):
     # "speaks audio passed as argument"
