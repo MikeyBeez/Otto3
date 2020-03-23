@@ -154,9 +154,9 @@ talkToMe('I am ready for your command')
 
 #loop to continue executing multiple commands
 while True:
-    if 'Otto' in myCommand:
-        assistant(myCommand())
-    else:
+    #if 'Otto' in Command:
+    #    assistant(Command())
+    #else:
         response = k.respond(myCommand())
         talkToMe(response)
 
