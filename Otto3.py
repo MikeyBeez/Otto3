@@ -9,12 +9,13 @@ import smtplib
 
 # import requests
 # from weather import Weather
+
+
 # This is aiml stuff
-# there is a lot of good info on aiml here:  https://www.devdungeon.com/content/ai-chat-bot-python-aiml
 
 BRAIN_FILE="brain.dump"
 
-k = aiml.Kernel()
+brainkernel = aiml.Kernel()
 
 # To increase the startup speed of the bot it is
 # possible to save the parsed aiml files as a
@@ -155,7 +156,7 @@ talkToMe('I am ready for your command')
 
 #loop to continue executing multiple commands
 while True:
-        response = k.respond(myCommand())
+        response = brainkernel.respond(myCommand())
         if 'auto' in response:
             assistant(response)
         else:
