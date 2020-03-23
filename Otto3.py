@@ -9,6 +9,8 @@ import smtplib
 
 # import requests
 # from weather import Weather
+# This is aiml stuff
+# there is a lot of good info on aiml here:  https://www.devdungeon.com/content/ai-chat-bot-python-aiml
 
 BRAIN_FILE="brain.dump"
 
