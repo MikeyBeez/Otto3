@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/home/bard/miniconda3/envs/Otto/bin/python3
 import os
 import aiml
 
