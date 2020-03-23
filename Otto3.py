@@ -153,7 +153,11 @@ def assistant(command):
             talkToMe('I don\'t know what you mean!')
 
 
+<<<<<<< HEAD
 #talkToMe('I am ready for your command')
+=======
+# talkToMe('I am ready for your command')
+>>>>>>> 055fff2d962f74ec4a6ceb915e119a8588bf3891
 
 #loop to continue executing multiple commands
 while True:
