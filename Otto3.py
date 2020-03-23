@@ -158,7 +158,8 @@ talkToMe('I am ready for your command')
 #loop to continue executing multiple commands
 while True:
         response = brainkernel.respond(myCommand())
-        if 'auto' in response:
+        if 'computer' in response:
+            print('computer')
             assistant(response)
         else:
             talkToMe(response)
