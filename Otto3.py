@@ -62,6 +62,7 @@ def myCommand():
 
     return command
 
+# right now I'm bypassing this function
 
 def assistant(command):
     "if statements for executing commands"
@@ -154,9 +155,9 @@ talkToMe('I am ready for your command')
 
 #loop to continue executing multiple commands
 while True:
-    #if 'Otto' in Command:
-    #    assistant(Command())
-    #else:
+    if 'Otto' in command:
+        assistant(Command())
+    else:
         response = k.respond(myCommand())
         talkToMe(response)
 
