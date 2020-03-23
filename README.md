@@ -5,7 +5,9 @@ First of all, I've made a video that should help with setting this up: https://w
 I forked this repository, played with it a bit, didn't make much progress, then left it alone for 17 months.
 The video has me making progress.  This now runs somewhat.  First of all, I hate using a big if then else 
 statement.  It's just bad coding.  So I intend to fix that.  Even a case statement sucks.  Please let me
-know if you have some thoughts on this.  
+know if you have some thoughts on this. 
+
+I've added an aiml chatbot from https://github.com/datenhahn/python-aiml-chatbot.  Basically, I build a brain from the standard directory then interface with tts and stt at the bottom of the Otto3.py file in the while loop.
 
 What follows is some old text that I'm leaving for now but will update or remove later.  The video works.
 
