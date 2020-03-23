@@ -40,7 +40,7 @@ def talkToMe(mytext):
     for line in mytext.splitlines():
         text_to_speech = gTTS(text=mytext, lang='en')
         text_to_speech.save('audio.mp3')
-        os.system('mpg123 -q -t audio.mp3')
+        os.system('mpg123 -q audio.mp3')
 
 def myCommand():
     # "listens for commands"
@@ -48,7 +48,7 @@ def myCommand():
     r = sr.Recognizer()
 
     with sr.Microphone() as source:
-        print('Ready, sort of . . .\n ')
+        print('Ready\n ')
         r.pause_threshold = 1
         r.adjust_for_ambient_noise(source, duration=1)
         audio = r.listen(source)
