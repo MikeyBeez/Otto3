@@ -163,6 +163,6 @@ while True:
             print('computer')
             assistant(output)
         else:
-        response = brainkernel.respond(output)
+            response = brainkernel.respond(output)
             talkToMe(response)
 
