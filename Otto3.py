@@ -87,8 +87,8 @@ def assistant(command):
         subprocess.call(["reboot"])
 
     elif 'terminal' in command:
-        subprocess.call(["terminator"])
-        #subprocess.call(["terminator -T First"])
+        #subprocess.call(["terminator"])
+        subprocess.call(['terminator','-T', 'First'])
         pyautogui.moveTo(2201, 1001, duration=.1)
         pyautogui.click()
         pyautogui.hotkey('winleft', 'right')
