@@ -85,6 +85,9 @@ def assistant(command):
     elif 'reboot' in command:
         subprocess.call(["reboot"])
 
+    elif 'terminal' in command:
+        subprocess.call(["terminator"])
+
     elif 'open website' in command:
         reg_ex = re.search('open website (.+)', command)
         if reg_ex:
