@@ -6,6 +6,7 @@ import aiml
 # import re
 import webbrowser
 import smtplib
+import subprocess
 
 # import requests
 # from weather import Weather
@@ -77,6 +78,12 @@ def assistant(command):
             url = url + 'r/' + subreddit
         webbrowser.open(url)
         print('Done!')
+
+    elif 'shutdown' in command:
+        subprocess.call(["shutdown -h now"])
+
+    elif 'reboot' in command:
+        subprocess.call(["reboot"])
 
     elif 'open website' in command:
         reg_ex = re.search('open website (.+)', command)
