@@ -90,9 +90,9 @@ def assistant(command):
         subprocess.call(["terminator"])
         pyautogui.moveTo(2201, 1001, duration=1)
         pyautogui.click()
-        pyautogui.keyDown('control')
+        pyautogui.keyDown('ctrl')
         pyautogui.press('right')
-        pyautogui.keyUp('control')
+        pyautogui.keyUp('ctrl')
 
     elif 'open website' in command:
         reg_ex = re.search('open website (.+)', command)
