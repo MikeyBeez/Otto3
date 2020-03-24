@@ -88,6 +88,8 @@ def assistant(command):
 
     elif 'terminal' in command:
         subprocess.call(["terminator"])
+        pyautogui.moveTo(2201, 1001, duration=1)
+        pyautogui.click()
         pyautogui.keyDown('control')
         pyautogui.press('right')
         pyautogui.keyUp('control')
