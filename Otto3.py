@@ -7,6 +7,7 @@ import aiml
 import webbrowser
 import smtplib
 import subprocess
+import pyautogui
 
 # import requests
 # from weather import Weather
@@ -87,6 +88,9 @@ def assistant(command):
 
     elif 'terminal' in command:
         subprocess.call(["terminator"])
+        pyautogui.keyDown('control')
+        pyautogui.press('right')
+        pyautogui.keyUp('control')
 
     elif 'open website' in command:
         reg_ex = re.search('open website (.+)', command)
