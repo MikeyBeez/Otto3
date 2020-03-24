@@ -4,3 +4,4 @@ env
 __pycache__/
 brain.dump
 .git
+environment.yaml
