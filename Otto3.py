@@ -91,9 +91,9 @@ def assistant(command):
         pyautogui.moveTo(2201, 1001, duration=1)
         pyautogui.click()
         #pyautogui.hotkey('win', 'right')
-        pyautogui.keyDown('win')
+        pyautogui.keyDown('command')
         pyautogui.press('right')
-        pyautogui.keyUp('win')
+        pyautogui.keyUp('command')
 
     elif 'open website' in command:
         reg_ex = re.search('open website (.+)', command)
