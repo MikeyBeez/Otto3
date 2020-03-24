@@ -91,7 +91,7 @@ def assistant(command):
         pyautogui.moveTo(2201, 1001, duration=1)
         pyautogui.click()
         #pyautogui.hotkey('win', 'right')
-        pyautogui.hotkey('winleft', 'r')
+        pyautogui.hotkey('winleft', 'right')
         #pyautogui.keyDown('command')
         #pyautogui.press('right')
         #pyautogui.keyUp('command')
