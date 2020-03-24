@@ -90,6 +90,7 @@ def assistant(command):
         subprocess.call(["terminator"])
         pyautogui.moveTo(2201, 1001, duration=1)
         pyautogui.click()
+        pyautogui.hotkey('ctrl', 'right')
         pyautogui.keyDown('ctrl')
         pyautogui.press('right')
         pyautogui.keyUp('ctrl')
