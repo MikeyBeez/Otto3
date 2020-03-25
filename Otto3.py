@@ -102,6 +102,10 @@ def assistant(command):
         pyautogui.click()
         pyautogui.hotkey('winleft', 'right')
 
+    elif 'commands' in command:
+
+        talkToMe("The following commands are available")
+
     elif 'open website' in command:
         reg_ex = re.search('open website (.+)', command)
         if reg_ex:
