@@ -79,7 +79,7 @@ def assistant(command):
         #    url = url + 'r/' + subreddit
         webbrowser.open(url)
         print('Done!')
-        talkToMe('Here's reddit, shit head!')
+        talkToMe('reddit is opening, shit head!')
 
     elif 'shutdown' in command:
         subprocess.call(["shutdown -h now"])
