@@ -52,38 +52,23 @@ def myCommand():
     # "listens for commands"
 
     r = sr.Recognizer()
-    m = sr.Microphone()
+
+    with sr.Microphone() as source:
+        print('Ready\n ')
+        r.pause_threshold = 1
+        r.adjust_for_ambient_noise(source, duration=1)
+        audio = r.listen(source)
+
     try:
-        print("A moment of silence, please...\n")
-        with m as source: r.adjust_for_ambient_noise(source)
-        print("Set minimum energy threshold to {}".format(r.energy_threshold))
-        while True:
-            print("Say something!")
-            with m as source: audio = r.listen(source)
-            print("Got it! Now to recognize it...")
-            try:
-                # recognize speech using Google Speech Recognition
-                command = r.recognize_google(audio).lower()
-                print('You said: ' + command + '\n')
+        command = r.recognize_google(audio).lower()
+        print('You said: ' + command + '\n')
 
-                return command
+    #loop back to continue to listen for commands if unrecognizable speech is received
+    except sr.UnknownValueError:
+        print('Your last command couldn\'t be heard')
+        command = myCommand();
 
-                # we need some special handling here to correctly print unicode characters to standard output
-                if str is bytes:  # this version of Python uses bytes for strings (Python 2)
-                    print(u"You said {}".format(command).encode("utf-8"))
-                else:  # this version of Python uses unicode for strings (Python 3+)
-                    print("You said {}".format(command))
-            except sr.UnknownValueError:
-                print("Oops! Didn't catch that")
-                #loop back to continue to listen for commands if unrecognizable speech is received
-                command = myCommand();
-            except sr.RequestError as e:
-                print("Uh oh! Couldn't request results from Google Speech Recognition service; {0}".format(e))
-
-            except sr.UnknownValueError:
-                print('Your last command couldn\'t be heard')
-    except KeyboardInterrupt:
-        pass
+    return command
 
 ######## Assistant Function
 
@@ -149,9 +134,6 @@ def assistant(command):
     elif 'reboot' in command:
         subprocess.call(["reboot"])
 
-    elif 'stop listening' in command:
-        quit()
-
 ######## End System Commands
 
 ######## Interface With Desktop
@@ -170,25 +152,25 @@ def assistant(command):
 ######## Help Section
 
     elif 'help' in command:
-        talkToMe("There are three different wake words")
-        talkToMe("They are Help, Computer, and Alice")
+        talkToMe("There are two different wake words")
+        talkToMe("They are Computer and Alice")
         talkToMe("Computer runs the listed commands that follow")
         talkToMe("Also, you can always say list commands.")
         talkToMe("Alice is a chatbot")
         talkToMe("You can talk to Alice about anything")
         talkToMe("But she's dumber than rocks.")
-        talkToMe("You can ask me to")
 
         with open("commandlist") as file:
             for line in file:
                 #line = line.strip()
+                talkToMe("You can ask me to")
                 talkToMe(line)
 
     elif 'commands' in command:
-        talkToMe("You can ask me to")
         with open("commandlist") as file:
             for line in file:
                 #line = line.strip()
+                talkToMe("You can ask me to")
                 talkToMe(line)
 
 ######## End Help Section
@@ -284,8 +266,8 @@ while True:
             print(response)
 
         elif 'help' in output:
-            talkToMe("There are three different wake words")
-            talkToMe("They are Help, Computer, and Alice")
+            talkToMe("There are two different wake words")
+            talkToMe("They are Computer and Alice")
             talkToMe("Computer runs the listed commands that follow")
             talkToMe("Also, you can always say list commands.")
             talkToMe("Alice is a chatbot")
