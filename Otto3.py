@@ -198,7 +198,7 @@ while True:
             response = brainkernel.respond(output)
             talkToMe(response)
         else:
-            print(output)
+            print('Alice')
             response = brainkernel.respond(output)
             talkToMe(response)
             
