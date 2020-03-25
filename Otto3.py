@@ -17,6 +17,9 @@ import pyautogui
 ###############################################################################################
 
 ######## THIS IS AIML SETUP STUFF
+# aiml is the stuff for the Alice chatbot.
+# aiml is modular; so it's easy to add to it.
+# all the plugin files are in the "standard" subdirectory. 
 
 # make a variable for the file name
 BRAIN_FILE="brain.dump"
