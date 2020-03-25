@@ -52,23 +52,38 @@ def myCommand():
     # "listens for commands"
 
     r = sr.Recognizer()
-
-    with sr.Microphone() as source:
-        print('Ready\n ')
-        r.pause_threshold = 1
-        r.adjust_for_ambient_noise(source, duration=1)
-        audio = r.listen(source)
-
+    m = sr.Microphone()
     try:
-        command = r.recognize_google(audio).lower()
-        print('You said: ' + command + '\n')
+        print("A moment of silence, please...\n")
+        with m as source: r.adjust_for_ambient_noise(source)
+        print("Set minimum energy threshold to {}".format(r.energy_threshold))
+        while True:
+            print("Say something!")
+            with m as source: audio = r.listen(source)
+            print("Got it! Now to recognize it...")
+            try:
+                # recognize speech using Google Speech Recognition
+                command = r.recognize_google(audio).lower()
+                print('You said: ' + command + '\n')
 
-    #loop back to continue to listen for commands if unrecognizable speech is received
-    except sr.UnknownValueError:
-        print('Your last command couldn\'t be heard')
-        command = myCommand();
+                return command
 
-    return command
+                # we need some special handling here to correctly print unicode characters to standard output
+                if str is bytes:  # this version of Python uses bytes for strings (Python 2)
+                    print(u"You said {}".format(command).encode("utf-8"))
+                else:  # this version of Python uses unicode for strings (Python 3+)
+                    print("You said {}".format(command))
+            except sr.UnknownValueError:
+                print("Oops! Didn't catch that")
+                #loop back to continue to listen for commands if unrecognizable speech is received
+                command = myCommand();
+            except sr.RequestError as e:
+                print("Uh oh! Couldn't request results from Google Speech Recognition service; {0}".format(e))
+
+            except sr.UnknownValueError:
+                print('Your last command couldn\'t be heard')
+    except KeyboardInterrupt:
+        pass
 
 ######## Assistant Function
 
@@ -133,6 +148,9 @@ def assistant(command):
 
     elif 'reboot' in command:
         subprocess.call(["reboot"])
+
+    elif 'stop listening' in command:
+        quit()
 
 ######## End System Commands
 
