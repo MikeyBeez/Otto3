@@ -251,10 +251,7 @@ def assistant(command):
 
 
 #talkToMe('To get started, say, HELP')
-
- print('To get started, say, COMPUTER HELP')
-
-
+print('To get started say COMPUTER HELP')
 #loop to continue executing multiple commands
 while True:
         output = myCommand()
