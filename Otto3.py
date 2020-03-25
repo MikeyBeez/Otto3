@@ -250,8 +250,8 @@ while True:
             assistant(output)
             print(output)
 
-        elif 'auto' in output:
-            print('Otto says:')
+        elif 'alice' in output:
+            print('Alice says:')
             response = brainkernel.respond(output)
             talkToMe(response)
             print(response)
