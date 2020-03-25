@@ -110,6 +110,14 @@ def assistant(command):
                 talkToMe("You can ask me to")
                 talkToMe(line)
 
+    elif 'help' in command:
+        with open("commandlist") as file:
+            for line in file:
+                #line = line.strip()
+                print(line)
+                talkToMe("You can ask me to")
+                talkToMe(line)
+
     elif 'open website' in command:
         reg_ex = re.search('open website (.+)', command)
         if reg_ex:
