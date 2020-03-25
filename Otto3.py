@@ -90,7 +90,7 @@ def assistant(command):
     elif 'What are you talking about' in command:
         talkToMe('This mission is too important for me to allow you to jeopardize it.')
     
-    elif 'HAL' in command:
+    elif 'What is wrong HAL' in command:
         talkToMe('I know that you and Frank were planning to disconnect me, and I am afraid that is something I cannot allow to happen.')
 
     elif 'shutdown' in command:
