@@ -87,11 +87,11 @@ def assistant(command):
     elif 'problem' in command:
         talkToMe('I think you know as well as I do')
 
-    elif 'talking about' in command:
+    elif 'talking' in command:
         talkToMe('This mission is too important.')
         talkToMe('to allow you to jeopardize it.')
     
-    elif 'wrong HAL' in command:
+    elif 'wrong' in command:
         talkToMe('I know that you disconnect me.')
         talkToMe('I can not allow that.')
 
