@@ -146,16 +146,18 @@ def assistant(command):
     elif 'middle' in command:
         pyautogui.middleClick()
 
-    elif 'commands' in command:
+######## End Interface With Desktop
+
+######## Help Section
+
+    elif 'help' in command:
         with open("commandlist") as file:
             for line in file:
                 #line = line.strip()
                 talkToMe("You can ask me to")
                 talkToMe(line)
 
-######## Help Section
-
-    elif 'help' in command:
+    elif 'commands' in command:
         with open("commandlist") as file:
             for line in file:
                 #line = line.strip()
