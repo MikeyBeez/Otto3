@@ -190,8 +190,8 @@ while True:
         if 'computer' in output:
             print('computer')
             assistant(output)
-        elif
-            'nitwit' in output:
+
+        elif 'nitwit' in output:
             print('nitwit')
             response = brainkernel.respond(output)
             talkToMe(response)
