@@ -193,6 +193,8 @@ while True:
 
         elif 'Alice' in output:
             print('Alice')
+            output = output.partition(' ')[2]
+            print(output)
             response = brainkernel.respond(output)
             talkToMe(response)
         else:
