@@ -89,6 +89,12 @@ def assistant(command):
     elif 'click' in command:
         pyautogui.click()
 
+    elif 'right' in command:
+        pyautogui.rightClick()
+
+    elif 'middle' in command:
+        pyautogui.middleClick()
+
     elif 'terminal' in command:
         #subprocess.call(["terminator"])
         subprocess.call(['terminator','-T', 'First'])
