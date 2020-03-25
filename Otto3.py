@@ -103,8 +103,12 @@ def assistant(command):
         pyautogui.hotkey('winleft', 'right')
 
     elif 'commands' in command:
-
-        talkToMe("The following commands are available")
+        with open("commandlist") as file:
+...     for line in file:
+...             line = line.strip()
+...             print(line)
+                talkToMe("You can ask me to")
+                talkToMe(line)
 
     elif 'open website' in command:
         reg_ex = re.search('open website (.+)', command)
