@@ -316,6 +316,8 @@ while True:
         output = myCommand()
         #haloutput = halCommand()
 
+        # Below are the three sections for the three wake words:
+
         if 'computer' in output:
             print('The computer responds:\n')
             assistant(output)
