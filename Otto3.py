@@ -86,6 +86,9 @@ def assistant(command):
     elif 'reboot' in command:
         subprocess.call(["reboot"])
 
+    elif 'click' in command:
+        pyautogui.click()
+
     elif 'terminal' in command:
         #subprocess.call(["terminator"])
         subprocess.call(['terminator','-T', 'First'])
