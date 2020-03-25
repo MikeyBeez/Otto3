@@ -104,9 +104,9 @@ def assistant(command):
 
     elif 'commands' in command:
         with open("commandlist") as file:
-...         for line in file:
-...             line = line.strip()
-...             print(line)
+            for line in file:
+                #line = line.strip()
+                print(line)
                 talkToMe("You can ask me to")
                 talkToMe(line)
 
