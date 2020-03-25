@@ -1,19 +1,20 @@
 #!/home/bard/miniconda3/envs/Otto/bin/python3
+
+######## Import Python3 Modules
+
 from gtts import gTTS
 import speech_recognition as sr
 import os
 import aiml
-# import re
 import webbrowser
 import smtplib
 import subprocess
 import pyautogui
-
 # import requests
 # from weather import Weather
+# import re
 
-
-# This is aiml stuff
+######## This Is AIML Stuff
 
 BRAIN_FILE="brain.dump"
 
@@ -34,6 +35,7 @@ else:
     print("Saving brain file: " + BRAIN_FILE)
     brainkernel.saveBrain(BRAIN_FILE)
 
+######## TTS Text To Speech Function 
 
 def talkToMe(mytext):
     # "speaks audio passed as argument"
@@ -43,6 +45,8 @@ def talkToMe(mytext):
         text_to_speech = gTTS(text=mytext, lang='en')
         text_to_speech.save('audio.mp3')
         os.system('mpg123 -q audio.mp3')
+
+######## STT Speech To Text Function That Returns command variable
 
 def myCommand():
     # "listens for commands"
@@ -66,10 +70,13 @@ def myCommand():
 
     return command
 
-# right now I'm bypassing this function
+######## Assistant Function
 
 def assistant(command):
-    "if statements for executing commands"
+
+######## Big If Statement for Executing Commands
+
+######## Open Programs
 
     if 'open reddit' in command:
         #reg_ex = re.search('open reddit (.*)', command)
@@ -81,6 +88,27 @@ def assistant(command):
         print('Done!')
         talkToMe('reddit is opening, shit head!')
 
+
+    elif 'terminal' in command:
+        #subprocess.call(["terminator"])
+        subprocess.call(['terminator','-T', 'First'])
+        pyautogui.moveTo(2201, 1001, duration=.1)
+        pyautogui.click()
+        pyautogui.hotkey('winleft', 'right')
+
+#    elif 'open website' in command:
+#        reg_ex = re.search('open website (.+)', command)
+#        if reg_ex:
+#            domain = reg_ex.group(1)
+#            url = 'https://www.' + domain
+#            webbrowser.open(url)
+#            print('Done!')
+#        else:
+#            pass
+
+######## End Open Programs
+
+######## HAL Stuff
     elif 'open the pod door' in command:
         talkToMe('I am sorry, Dave. I am afraid I can not do that.')
     
@@ -92,14 +120,22 @@ def assistant(command):
         talkToMe('to allow you to jeopardize it.')
     
     elif 'why do you say that' in command:
-        talkToMe('I know that you disconnect me.')
+        talkToMe('I know that you want to disconnect me.')
         talkToMe('I can not allow that.')
+
+######## End HAL Stuff
+
+######## System Commands
 
     elif 'shutdown' in command:
         subprocess.call(["shutdown -h now"])
 
     elif 'reboot' in command:
         subprocess.call(["reboot"])
+
+######## End System Commands
+
+######## Interface With Desktop
 
     elif 'click' in command:
         pyautogui.click()
@@ -110,19 +146,14 @@ def assistant(command):
     elif 'middle' in command:
         pyautogui.middleClick()
 
-    elif 'terminal' in command:
-        #subprocess.call(["terminator"])
-        subprocess.call(['terminator','-T', 'First'])
-        pyautogui.moveTo(2201, 1001, duration=.1)
-        pyautogui.click()
-        pyautogui.hotkey('winleft', 'right')
-
     elif 'commands' in command:
         with open("commandlist") as file:
             for line in file:
                 #line = line.strip()
                 talkToMe("You can ask me to")
                 talkToMe(line)
+
+######## Help Section
 
     elif 'help' in command:
         with open("commandlist") as file:
@@ -131,15 +162,10 @@ def assistant(command):
                 talkToMe("You can ask me to")
                 talkToMe(line)
 
-    elif 'open website' in command:
-        reg_ex = re.search('open website (.+)', command)
-        if reg_ex:
-            domain = reg_ex.group(1)
-            url = 'https://www.' + domain
-            webbrowser.open(url)
-            print('Done!')
-        else:
-            pass
+######## End Help Section
+
+
+######## Miscelaneous
 
     elif 'what\'s up' in command:
         talkToMe('Just doing my thing')
@@ -215,6 +241,7 @@ def assistant(command):
 #loop to continue executing multiple commands
 while True:
         output = myCommand()
+        #haloutput = halCommand()
 
         if 'computer' in output:
             print('The computer responds:\n')
@@ -226,5 +253,12 @@ while True:
             response = brainkernel.respond(output)
             talkToMe(response)
             print(response)
+
+        #elif 'hal' in output:
+        #    print('hal says:')
+        #    response = brainkernel.respond(haloutput)
+        #    talkToMe(response)
+        #    print(response)
+
         else:
             pass
