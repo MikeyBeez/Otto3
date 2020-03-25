@@ -84,7 +84,7 @@ def assistant(command):
     elif 'open the pod door' in command:
         talkToMe('I am sorry, Dave. I am afraid I can not do that.')
     
-    elif 'What is the problem' in command:
+    elif 'problem' in command:
         talkToMe('I think you know as well as I do')
 
     elif 'What are you talking about' in command:
