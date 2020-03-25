@@ -191,14 +191,14 @@ while True:
             print('The computer responds')
             assistant(output)
 
-        #elif 'Alice' in output:
-        #    print('Alice says:')
+        elif 'alice' in output:
+            print('Alice says:')
+            print(output)
+            response = brainkernel.respond(output)
+            talkToMe(response)
         #    aliceOut = output.partition(' ')[2]
         #    print(aliceOut)
         #    response = brainkernel.respond(aliceOut)
         #    talkToMe(response)
         else:
-            print(output)
-            response = brainkernel.respond(output)
-            talkToMe(response)
-
+            pass
