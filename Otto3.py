@@ -1,6 +1,6 @@
 #!/home/bard/miniconda3/envs/Otto/bin/python3
 
-######## Import Python3 Modules
+######## IMPORT PYTHON3 MODULES
 
 from gtts import gTTS
 import speech_recognition as sr
@@ -14,7 +14,9 @@ import pyautogui
 # from weather import Weather
 # import re
 
-######## This Is AIML Stuff
+###############################################################################################
+
+######## THIS IS AIML STUFF
 
 BRAIN_FILE="brain.dump"
 
@@ -35,7 +37,11 @@ else:
     print("Saving brain file: " + BRAIN_FILE)
     brainkernel.saveBrain(BRAIN_FILE)
 
-######## TTS Text To Speech Function 
+######## END AIML STUFF
+
+###############################################################################################
+
+######## TTS TEXT TO SPEECH FUNCTION 
 
 def talkToMe(mytext):
     # "speaks audio passed as argument"
@@ -46,7 +52,11 @@ def talkToMe(mytext):
         text_to_speech.save('audio.mp3')
         os.system('mpg123 -q audio.mp3')
 
-######## STT Speech To Text Function That Returns command variable
+######## END TTS TEXT TO SPEECH FUNCTION 
+
+###############################################################################################
+
+######## STT SPEECH TO TEXT FUNCTION THAT RETURNS THE VARIABLE: command
 
 def myCommand():
     # "listens for commands"
@@ -70,7 +80,11 @@ def myCommand():
 
     return command
 
-######## Assistant Function
+######## END STT SPEECH TO TEXT FUNCTION THAT RETURNS THE VARIABLE: command
+
+###############################################################################################
+
+######## BEGIN GIGANTIC ASSISTANT FUNCTION
 
 def assistant(command):
 
@@ -88,6 +102,7 @@ def assistant(command):
         print('Done!')
         talkToMe('reddit is opening, shit head!')
 
+# next command
 
     elif 'terminal' in command:
         #subprocess.call(["terminator"])
@@ -113,13 +128,19 @@ def assistant(command):
     elif 'open the pod door' in command:
         talkToMe('I am sorry, Dave. I am afraid I can not do that.')
     
+# next command
+
     elif 'problem' in command:
         talkToMe('I think you know as well as I do')
+
+# next command
 
     elif 'talkin' in command:
         talkToMe('This mission is too important.')
         talkToMe(' I can not to allow you to jeopardize it.')
     
+# next command
+
     elif 'why do you say that' in command:
         talkToMe('I know that you want to disconnect me.')
         talkToMe('I can not allow that.')
@@ -131,8 +152,12 @@ def assistant(command):
     elif 'shutdown' in command:
         subprocess.call(["shutdown -h now"])
 
+# next command
+
     elif 'reboot' in command:
         subprocess.call(["reboot"])
+
+# next command
 
     elif 'stop listening' in command:
         quit()
@@ -144,8 +169,12 @@ def assistant(command):
     elif 'click' in command:
         pyautogui.click()
 
+# next command
+
     elif 'right' in command:
         pyautogui.rightClick()
+
+# next command
 
     elif 'middle' in command:
         pyautogui.middleClick()
@@ -158,7 +187,7 @@ def assistant(command):
         talkToMe("There are three different wake words")
         talkToMe("They are Help, Computer, and Alice")
         talkToMe("Computer runs the listed commands that follow")
-        talkToMe("Also, you can always say list commands.")
+        talkToMe("Also, you can always say COMPUTER list commands.")
         talkToMe("Alice is a chatbot")
         talkToMe("You can talk to Alice about anything")
         talkToMe("But she's dumber than rocks.")
@@ -168,6 +197,7 @@ def assistant(command):
             for line in file:
                 #line = line.strip()
                 talkToMe(line)
+# next command
 
     elif 'commands' in command:
         talkToMe("You can ask me to")
@@ -183,6 +213,8 @@ def assistant(command):
 
     elif 'what\'s up' in command:
         talkToMe('Just doing my thing')
+
+# next command
 
     # elif 'joke' in command:
     #     res = requests.get(
@@ -245,10 +277,13 @@ def assistant(command):
 #    else:
 #        talkToMe('I don\'t know what you mean!')
 #
-######## End Miscelaneous
+######## End Miscelaneous Section
 
+######## END GIGANTIC ASSISTANT FUNCTION
 
-######## Start main program
+###############################################################################################
+
+######## START MAIN PROGRAM
 
 talkToMe('To get started, you can say, HELP')
 
@@ -287,3 +322,7 @@ while True:
 
         else:
             pass
+
+######## END MAIN PROGRAM
+
+###############################################################################################
