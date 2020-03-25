@@ -284,8 +284,8 @@ while True:
             print(response)
 
         elif 'help' in output:
-            talkToMe("There are two different wake words")
-            talkToMe("They are Computer and Alice")
+            talkToMe("There are three different wake words")
+            talkToMe("They are Help, Computer, and Alice")
             talkToMe("Computer runs the listed commands that follow")
             talkToMe("Also, you can always say list commands.")
             talkToMe("Alice is a chatbot")
