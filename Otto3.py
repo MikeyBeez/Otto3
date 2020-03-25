@@ -81,6 +81,18 @@ def assistant(command):
         print('Done!')
         talkToMe('reddit is opening, shit head!')
 
+    elif 'open the pod door' in command:
+        talkToMe('I am sorry, Dave. I am afraid I can not do that.')
+    
+    elif 'What is the problem' in command:
+        talkToMe('I think you know what the problem is just as well as I do')
+
+    elif 'What are you talking about' in command:
+        talkToMe('This mission is too important for me to allow you to jeopardize it.')
+    
+    elif 'HAL' in command:
+        talkToMe('I know that you and Frank were planning to disconnect me, and I am afraid that is something I cannot allow to happen.')
+
     elif 'shutdown' in command:
         subprocess.call(["shutdown -h now"])
 
