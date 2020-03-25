@@ -118,7 +118,7 @@ def assistant(command):
 
     elif 'talkin' in command:
         talkToMe('This mission is too important.')
-        talkToMe('to allow you to jeopardize it.')
+        talkToMe(' I can not to allow you to jeopardize it.')
     
     elif 'why do you say that' in command:
         talkToMe('I know that you want to disconnect me.')
@@ -250,9 +250,12 @@ def assistant(command):
 
 ######## Start main program
 
-#talkToMe('To get started, say, HELP')
+talkToMe('To get started, you can say, HELP')
+
 print('To get started say COMPUTER HELP')
+
 #loop to continue executing multiple commands
+
 while True:
         output = myCommand()
         #haloutput = halCommand()
@@ -272,20 +275,15 @@ while True:
             talkToMe("There are three different wake words")
             talkToMe("They are Help, Computer, and Alice")
             talkToMe("Computer runs the listed commands that follow")
-            talkToMe("Also, you can always say list commands.")
+            talkToMe("Also, you can always say COMPUTER list commands.")
             talkToMe("Alice is a chatbot")
             talkToMe("You can talk to Alice about anything")
             talkToMe("But she's dumber than rocks.")
+            talkToMe("Say ALICE, what's the capital of England?")
             talkToMe("To repeat this and get the list of commands,")
             talkToMe("say, COMPUTER HELP")
             talkToMe("Remember, the list is for the COMPUTER wake word.")
 
-            
-        #elif 'hal' in output:
-        #    print('hal says:')
-        #    response = brainkernel.respond(haloutput)
-        #    talkToMe(response)
-        #    print(response)
 
         else:
             pass
