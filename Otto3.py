@@ -170,25 +170,25 @@ def assistant(command):
 ######## Help Section
 
     elif 'help' in command:
-        talkToMe("There are two different wake words")
-        talkToMe("They are Computer and Alice")
+        talkToMe("There are three different wake words")
+        talkToMe("They are Help, Computer, and Alice")
         talkToMe("Computer runs the listed commands that follow")
         talkToMe("Also, you can always say list commands.")
         talkToMe("Alice is a chatbot")
         talkToMe("You can talk to Alice about anything")
         talkToMe("But she's dumber than rocks.")
+        talkToMe("You can ask me to")
 
         with open("commandlist") as file:
             for line in file:
                 #line = line.strip()
-                talkToMe("You can ask me to")
                 talkToMe(line)
 
     elif 'commands' in command:
+        talkToMe("You can ask me to")
         with open("commandlist") as file:
             for line in file:
                 #line = line.strip()
-                talkToMe("You can ask me to")
                 talkToMe(line)
 
 ######## End Help Section
