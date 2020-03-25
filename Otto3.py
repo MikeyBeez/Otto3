@@ -188,17 +188,17 @@ while True:
         output = myCommand()
 
         if 'computer' in output:
-            print('computer')
+            print('The computer responds')
             assistant(output)
 
         elif 'Alice' in output:
-            print('Alice')
-            output = output.partition(' ')[2]
-            print(output)
-            response = brainkernel.respond(output)
+            print('Alice says:')
+            aliceOut = output.partition(' ')[2]
+            print(aliceOut)
+            response = brainkernel.respond(aliceOut)
             talkToMe(response)
         else:
-            print('Alice')
+            print('Alice says:')
             response = brainkernel.respond(output)
             talkToMe(response)
             
