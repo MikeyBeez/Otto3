@@ -152,19 +152,12 @@ def assistant(command):
 
     elif 'help' in command:
         talkToMe("There are two different wake words")
-        print("There are two different wake words:")
         talkToMe("They are Computer and Alice")
-        print("They are Computer and Alice.")
         talkToMe("Computer runs the listed commands that follow")
-        print("Computer runs the listed commands that follow.")
         talkToMe("Also, you can always say list commands.")
-        print("Also, you can always say list commends.")
         talkToMe("Alice is a chatbot")
-        print("Alice is a chatbot.")
         talkToMe("You can talk to Alice about anything")
-        print("You can talk to Alice about anything,")
         talkToMe("But she's dumber than rocks.")
-        print("but she's dumber than rocks.")
 
         with open("commandlist") as file:
             for line in file:
