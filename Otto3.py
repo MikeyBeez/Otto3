@@ -191,6 +191,9 @@ while True:
             print('computer')
             assistant(output)
         else:
-            response = brainkernel.respond(output)
-            talkToMe(response)
+            if 'nitwit' in output:
+                response = brainkernel.respond(output)
+                talkToMe(response)
+        else:
+            print("What the fuck?")
 
