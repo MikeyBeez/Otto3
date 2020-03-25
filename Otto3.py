@@ -128,6 +128,14 @@ def assistant(command):
 
 # next command
 
+    if 'open youtube' in command:
+        url = 'https://www.youtube.com/'
+        webbrowser.open(url)
+        print('Done!')
+        talkToMe('youtube is opening, shit head!')
+
+# next command
+
     elif 'terminal' in command:
         #subprocess.call(["terminator"])
         subprocess.call(['terminator','-T', 'First'])
