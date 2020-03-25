@@ -68,45 +68,6 @@
             <learn>standard/xfind.aiml</learn>
             <learn>standard/update1.aiml</learn>
             <learn>standard/update_mccormick.aiml</learn>
-            <learn>secondstandard/20q.aiml</learn>
-            <learn>secondstandard/battledome.aiml</learn>
-            <learn>secondstandard/binary.aiml</learn>
-            <learn>secondstandard/blackjack.aiml</learn>
-            <learn>secondstandard/bornin.aiml</learn>
-            <learn>secondstandard/botcompare.aiml</learn>
-            <learn>secondstandard/calendar.aiml</learn>
-            <learn>secondstandard/chatbots32.aiml</learn>
-            <learn>secondstandard/copyme.aiml</learn>
-            <learn>secondstandard/currency.aiml</learn>
-            <learn>secondstandard/daystoxmas.aiml</learn>
-            <learn>secondstandard/drphil.aiml</learn>
-            <learn>secondstandard/gender.aiml</learn>
-            <learn>secondstandard/hangman.aiml</learn>
-            <learn>secondstandard/happy.aiml</learn>
-            <learn>secondstandard/highroller.aiml</learn>
-            <learn>secondstandard/horoscope.aiml</learn>
-            <learn>secondstandard/howmany.aiml</learn>
-            <learn>secondstandard/jokes.aiml</learn>
-            <learn>secondstandard/knockknock.aiml</learn>
-            <learn>secondstandard/learn.aiml</learn>
-            <learn>secondstandard/LICENSE</learn>
-            <learn>secondstandard/luckyslots.aiml</learn>
-            <learn>secondstandard/maths.aiml</learn>
-            <learn>secondstandard/numberdrop.aiml</learn>
-            <learn>secondstandard/numberones.aiml</learn>
-            <learn>secondstandard/onthisday.aiml</learn>
-            <learn>secondstandard/poker.aiml</learn>
-            <learn>secondstandard/quizfacts.aiml</learn>
-            <learn>secondstandard/README.md</learn>
-            <learn>secondstandard/seasons.aiml</learn>
-            <learn>secondstandard/shutup.aiml</learn>
-            <learn>secondstandard/tictactoe.aiml</learn>
-            <learn>secondstandard/warnings.aiml</learn>
-            <learn>secondstandard/whatday_eng.aiml</learn>
-            <learn>secondstandard/whatday_usa.aiml</learn>
-            <learn>secondstandard/wordplay.aiml</learn>
-            <learn>secondstandard/yomama.aiml</learn>
-            <learn>secondstandard/zbert.aiml</learn> 
         </template>
     </category>
 </aiml>
