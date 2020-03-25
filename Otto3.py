@@ -96,6 +96,7 @@ def assistant(command):
         pyautogui.click()
         pyautogui.hotkey('winleft', 'right')
 
+####### I may not implement this.I'm not sure it's that helpful
 #    elif 'open website' in command:
 #        reg_ex = re.search('open website (.+)', command)
 #        if reg_ex:
@@ -179,6 +180,7 @@ def assistant(command):
 
     elif 'what\'s up' in command:
         talkToMe('Just doing my thing')
+
     # elif 'joke' in command:
     #     res = requests.get(
     #             'https://icanhazdadjoke.com/',
@@ -210,38 +212,40 @@ def assistant(command):
     #                      'The lowest temperature will be %.1f degrees.' % (forecasts[i].date(), forecasts[i].text(), (int(forecasts[i].high())-32)/1.8, (int(forecasts[i].low())-32)/1.8))
 
 
-    elif 'email' in command:
-        talkToMe('Who is the recipient?')
-        recipient = myCommand()
+#    elif 'email' in command:
+#        talkToMe('Who is the recipient?')
+#        recipient = myCommand()
+#
+#        talkToMe('What should I say?')
+#        content = myCommand()
+#
+#        #init gmail SMTP
+#        mail = smtplib.SMTP('smtp.gmail.com', 587)
+#
+#        #identify to server
+#        mail.ehlo()
+#
+#        #encrypt session
+#        mail.starttls()
+#
+#        #login
+#        mail.login('username', 'password')
+#
+#        #send message
+#        mail.sendmail('John Fisher', 'JARVIS2.0@protonmail.com', content)
+#
+#        #end mail connection
+#        mail.close()
+#
+#        talkToMe('Email sent.')
+#
+#    else:
+#        talkToMe('I don\'t know what you mean!')
+#
+######## End Miscelaneous
 
-        if 'John' in recipient:
-            talkToMe('What should I say?')
-            content = myCommand()
 
-            #init gmail SMTP
-            mail = smtplib.SMTP('smtp.gmail.com', 587)
-
-            #identify to server
-            mail.ehlo()
-
-            #encrypt session
-            mail.starttls()
-
-            #login
-            mail.login('username', 'password')
-
-            #send message
-            mail.sendmail('John Fisher', 'JARVIS2.0@protonmail.com', content)
-
-            #end mail connection
-            mail.close()
-
-            talkToMe('Email sent.')
-
-        else:
-            talkToMe('I don\'t know what you mean!')
-
-
+######## Start main program
 
 #talkToMe('To get started, say, HELP')
 print('To get started say COMPUTER HELP')
