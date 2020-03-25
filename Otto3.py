@@ -72,13 +72,14 @@ def assistant(command):
     "if statements for executing commands"
 
     if 'open reddit' in command:
-        reg_ex = re.search('open reddit (.*)', command)
+        #reg_ex = re.search('open reddit (.*)', command)
         url = 'https://www.reddit.com/'
-        if reg_ex:
-            subreddit = reg_ex.group(1)
-            url = url + 'r/' + subreddit
+        #if reg_ex:
+        #    subreddit = reg_ex.group(1)
+        #    url = url + 'r/' + subreddit
         webbrowser.open(url)
         print('Done!')
+        talkToMe('Here's reddit, shit head!')
 
     elif 'shutdown' in command:
         subprocess.call(["shutdown -h now"])
@@ -106,7 +107,6 @@ def assistant(command):
         with open("commandlist") as file:
             for line in file:
                 #line = line.strip()
-                print(line)
                 talkToMe("You can ask me to")
                 talkToMe(line)
 
@@ -114,7 +114,6 @@ def assistant(command):
         with open("commandlist") as file:
             for line in file:
                 #line = line.strip()
-                print(line)
                 talkToMe("You can ask me to")
                 talkToMe(line)
 
