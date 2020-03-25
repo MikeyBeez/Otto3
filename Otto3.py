@@ -85,13 +85,15 @@ def assistant(command):
         talkToMe('I am sorry, Dave. I am afraid I can not do that.')
     
     elif 'What is the problem' in command:
-        talkToMe('I think you know what the problem is just as well as I do')
+        talkToMe('I think you know as well as I do')
 
     elif 'What are you talking about' in command:
-        talkToMe('This mission is too important for me to allow you to jeopardize it.')
+        talkToMe('This mission is too important.')
+        talkToMe('to allow you to jeopardize it.')
     
     elif 'What is wrong HAL' in command:
-        talkToMe('I know that you and Frank were planning to disconnect me, and I am afraid that is something I cannot allow to happen.')
+        talkToMe('I know that you disconnect me.')
+        talkToMe('I can not allow that.')
 
     elif 'shutdown' in command:
         subprocess.call(["shutdown -h now"])
