@@ -10,7 +10,7 @@ import webbrowser
 import smtplib
 import subprocess
 import pyautogui
-import playsound
+# import playsound
 # import requests
 # from weather import Weather
 # import re
@@ -67,9 +67,9 @@ def talkToMe(mytext):
         text_to_speech.save('audio.mp3')
         # the sox modules wrapper is mpg123.
         # This is called by the operating system imported os module.
-        # os.system('mpg123 -q audio.mp3')
+        os.system('mpg123 -q audio.mp3')
         # I'm testing this using the playsound package
-        playsound.playsound('audio.mp3')
+        # playsound.playsound('audio.mp3')
 
 ######## END TTS TEXT TO SPEECH FUNCTION 
 
