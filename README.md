@@ -4,6 +4,8 @@ First of all, I've made a video that should help with setting this up: https://w
 
 There is a lot of good info on aiml here:  https://www.devdungeon.com/content/ai-chat-bot-python-aiml
 
+You should start Otto by running otto.sh.  You will need to edit the  file to point to your conda environments python and the path to Otto3.py.  This shell hides ALSA error messages that are not a problem.  For debugging, however, run Otto3.py directly.  You'll need to make it executable.    
+
 
 I forked this repository, played with it a bit, didn't make much progress, then left it alone for 17 months.
 The video has me making progress.  This now runs somewhat.  First of all, I hate using a big if then else 
