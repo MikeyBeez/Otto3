@@ -100,7 +100,7 @@ def myCommand():
     # loop back to continue to listen for commands if unrecognizable speech is received
     # except sr.UnknownValueError:
     except Exception as e:
-        print('Exception: ' +str(e))
+        print('waiting: ' +str(e))
         command = myCommand();
 
     # This tiny line is important. It is returning the command variable with the
