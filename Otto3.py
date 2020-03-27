@@ -98,8 +98,9 @@ def myCommand():
 
     # This except block is catching errors if the try block fails.
     # loop back to continue to listen for commands if unrecognizable speech is received
-    except sr.UnknownValueError:
-        print('Your last command couldn\'t be heard')
+    # except sr.UnknownValueError:
+    except Exception as e:
+        print('Exception: ' +str(e))
         command = myCommand();
 
     # This tiny line is important. It is returning the command variable with the
