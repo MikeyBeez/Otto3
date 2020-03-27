@@ -323,6 +323,9 @@ def assistant(command):
 talkToMe('To get started, you can say, HELP')
 
 print('To get started say COMPUTER HELP')
+print('If you are on Ubuntu, ignore the following ALSA errors')
+print('pyaudio was compiled on a different linux')
+print('If you can not bear them, you will need to recompile pyaudio.')
 
 #loop to continue executing multiple commands
 
