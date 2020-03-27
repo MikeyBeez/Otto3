@@ -69,7 +69,7 @@ def talkToMe(mytext):
         # This is called by the operating system imported os module.
         # os.system('mpg123 -q audio.mp3')
         # I'm testing this using the playsound package
-        playsound.playsound(audio.mp3)
+        playsound.playsound('audio.mp3')
 
 ######## END TTS TEXT TO SPEECH FUNCTION 
 
