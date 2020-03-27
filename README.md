@@ -17,6 +17,14 @@ cd Otto3
 conda env create otto.yaml
 
 Once you have Otto3 running, you should switch to starting Otto by running otto.sh.  You will need to edit this file to point to your conda environments python and the path to Otto3.py.  From inside your activated conda environment type which python3.  This will give you the path to your actual python command.  After you edit otto.sh, you should start otto from this shell which hides ALSA error messages that are not a problem.  For debugging, however, run Otto3.py directly.  You'll need to make it executable.    
+
+I removed these lines from Otto3.py since the otto.sh wrapper hides the ALSA messages, but you should be aware of them:
+
+print('If you are on Ubuntu, ignore the following ALSA errors')
+print('pyaudio was compiled on a different linux')
+print('If you can not bear them, you will need to recompile pyaudio.')
+
+
 First of all, I've made a video that should help with setting this up: https://www.youtube.com/watch?v=PwoZKKR6MRs
 
 There is a lot of good info on aiml here:  https://www.devdungeon.com/content/ai-chat-bot-python-aiml
