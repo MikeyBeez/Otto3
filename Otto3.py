@@ -239,7 +239,7 @@ def assistant(command):
 
     elif 'minimize' in command:
         pyautogui.click()
-        pyautogui.hotkey('winleft', 'down')
+        pyautogui.hotkey('winleft', 'h')
 
 ######## End Interface With Desktop
 
