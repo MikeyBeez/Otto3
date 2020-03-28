@@ -207,7 +207,7 @@ def assistant(command):
 
 # next command
 
-    elif 'right' in command:
+    elif 'other' in command:
         pyautogui.rightClick()
 
 # next command
@@ -217,14 +217,14 @@ def assistant(command):
 
 # next command
 
-    elif 'back' in command:
+    elif 'right' in command:
         pyautogui.moveTo(400, 400, duration=.1)
         pyautogui.click()
         pyautogui.hotkey('winleft', 'right')
 
 # next command
 
-    elif 'side' in command:
+    elif 'left' in command:
         pyautogui.moveTo(2200, 1000, duration=.1)
         pyautogui.click()
         pyautogui.hotkey('winleft', 'left')
@@ -247,13 +247,13 @@ def assistant(command):
 
     elif 'help' in command:
         talkToMe("There are three different wake words")
-        talkToMe("They are Help, Computer, and Alice")
-        talkToMe("Computer runs the listed commands that follow")
-        talkToMe("Also, you can always say COMPUTER list commands.")
+        talkToMe("They are Help, Zoe, and Alice")
+        talkToMe("Zoe runs the listed commands that follow")
+        talkToMe("Also, you can always say ZOE list commands.")
         talkToMe("Alice is a chatbot")
         talkToMe("You can talk to Alice about anything")
         talkToMe("But she's dumber than rocks.")
-        talkToMe("You can ask me to")
+        talkToMe("You can ask Zoe to")
 
         with open("commandlist") as file:
             for line in file:
@@ -262,7 +262,7 @@ def assistant(command):
 # next command
 
     elif 'commands' in command:
-        talkToMe("You can ask me to")
+        talkToMe("You can ask Zoe to")
         with open("commandlist") as file:
             for line in file:
                 #line = line.strip()
@@ -347,9 +347,9 @@ def assistant(command):
 
 ######## START MAIN PROGRAM
 
-talkToMe('To get started, you can say, HELP')
+talkToMe('To get started, say, HELP')
 
-print('To get started say COMPUTER HELP')
+print('Or say, ZOE HELP')
 #print('If you are on Ubuntu, ignore the following ALSA errors')
 #print('pyaudio was compiled on a different linux')
 #print('If you can not bear them, you will need to recompile pyaudio.')
@@ -362,8 +362,8 @@ while True:
 
         # Below are the three sections for the three wake words:
 
-        if 'computer' in output:
-            print('The computer responds:\n')
+        if 'zoe' in output:
+            print('The zoe responds:\n')
             assistant(output)
             print(output)
 
@@ -375,16 +375,16 @@ while True:
 
         elif 'help' in output:
             talkToMe("There are three different wake words")
-            talkToMe("They are Help, Computer, and Alice")
-            talkToMe("Computer runs the listed commands that follow")
-            talkToMe("Also, you can always say COMPUTER list commands.")
+            talkToMe("They are Help, Zoe, and Alice")
+            talkToMe("Zoe runs the listed commands that follow")
+            talkToMe("Also, you can always say ZOE list commands.")
             talkToMe("Alice is a chatbot")
             talkToMe("You can talk to Alice about anything")
             talkToMe("But she's dumber than rocks.")
             talkToMe("Say ALICE, what's the capital of England?")
             talkToMe("To repeat this and get the list of commands,")
-            talkToMe("say, COMPUTER HELP")
-            talkToMe("Remember, the list is for the COMPUTER wake word.")
+            talkToMe("say, ZOE HELP")
+            talkToMe("Remember, the list is for the ZOE wake word.")
 
 
         else:
