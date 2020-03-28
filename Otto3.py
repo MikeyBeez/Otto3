@@ -217,7 +217,7 @@ def assistant(command):
 
 # next command
 
-    elif 'move' in command:
+    elif 'back' in command:
         pyautogui.moveTo(100, 100, duration=.1)
         pyautogui.click()
         pyautogui.hotkey('winleft', 'right')
