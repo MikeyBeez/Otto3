@@ -58,16 +58,16 @@ def talkToMe(mytext):
 
     print(mytext)
     # can handle multiline text.
-    for line in mytext.splitlines():
+    #for line in mytext.splitlines():
         # uses the google text to speech module to synthesize text
-        text_to_speech = gTTS(text=mytext, lang='en')
+    text_to_speech = gTTS(text=mytext, lang='en')
         # saves syntesized speech to audio.mp3
         # this file gets written, played. and overwritten
         # over and over again.
-        text_to_speech.save('audio.mp3')
+    text_to_speech.save('audio.mp3')
         # the sox modules wrapper is mpg123.
         # This is called by the operating system imported os module.
-        os.system('mpg123 -q audio.mp3')
+    os.system('mpg123 -q audio.mp3')
         # I'm testing this using the playsound package
         # playsound.playsound('audio.mp3')
 
@@ -101,7 +101,7 @@ def myCommand():
     # except sr.UnknownValueError:
     except Exception as e:
         print('waiting . . .  ' +str(e))
-        command = myCommand();
+        command = myCommand()
 
     # This tiny line is important. It is returning the command variable with the
     # new value we just set.  It will be used later.
