@@ -229,6 +229,18 @@ def assistant(command):
         pyautogui.click()
         pyautogui.hotkey('winleft', 'left')
 
+# next command
+
+    elif 'maximize' in command:
+        pyautogui.click()
+        pyautogui.hotkey('winleft', 'up')
+
+# next command
+
+    elif 'minimize' in command:
+        pyautogui.click()
+        pyautogui.hotkey('winleft', 'down')
+
 ######## End Interface With Desktop
 
 ######## Help Section

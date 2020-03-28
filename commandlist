@@ -7,6 +7,8 @@ computer right
 computer middle
 computer side (moves right window left)
 computer back (moves left window right)
+computer maximize 
+computer minimize 
 computer new terminal
 computer list commands
 computer what's up
