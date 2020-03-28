@@ -215,6 +215,20 @@ def assistant(command):
     elif 'middle' in command:
         pyautogui.middleClick()
 
+# next command
+
+    elif 'go right' in command:
+        pyautogui.moveTo(100, 100, duration=.1)
+        pyautogui.click()
+        pyautogui.hotkey('winleft', 'right')
+
+# next command
+
+    elif 'go left' in command:
+        pyautogui.moveTo(2200, 1000, duration=.1)
+        pyautogui.click()
+        pyautogui.hotkey('winleft', 'left')
+
 ######## End Interface With Desktop
 
 ######## Help Section
