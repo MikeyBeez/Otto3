@@ -4,13 +4,12 @@
 
 from gtts import gTTS
 import speech_recognition as sr
-import os
 import aiml
-import webbrowser
-import smtplib
-import subprocess
 import pyautogui
-#import playsound
+import subprocess
+import os
+import webbrowser
+#import smtplib
 # import requests
 # from weather import Weather
 # import re
@@ -68,8 +67,6 @@ def talkToMe(mytext):
         # the sox modules wrapper is mpg123.
         # This is called by the operating system imported os module.
     os.system('mpg123 -q audio.mp3')
-        # I'm testing this using the playsound package
-        # playsound.playsound('audio.mp3')
 
 ######## END TTS TEXT TO SPEECH FUNCTION 
 
