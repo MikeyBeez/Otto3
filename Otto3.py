@@ -217,14 +217,14 @@ def assistant(command):
 
 # next command
 
-    elif 'go right' in command:
+    elif 'move' in command:
         pyautogui.moveTo(100, 100, duration=.1)
         pyautogui.click()
         pyautogui.hotkey('winleft', 'right')
 
 # next command
 
-    elif 'go left' in command:
+    elif 'side' in command:
         pyautogui.moveTo(2200, 1000, duration=.1)
         pyautogui.click()
         pyautogui.hotkey('winleft', 'left')
