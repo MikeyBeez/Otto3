@@ -59,7 +59,7 @@ def talkToMe(mytext):
     # can handle multiline text.
     #for line in mytext.splitlines():
         # uses the google text to speech module to synthesize text
-    text_to_speech = gTTS(text=mytext, lang='en')
+    text_to_speech = gTTS(text=mytext, lang='en-uk')
         # saves syntesized speech to audio.mp3
         # this file gets written, played. and overwritten
         # over and over again.
