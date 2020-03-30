@@ -9,10 +9,11 @@ import pyautogui
 import subprocess
 import os
 import webbrowser
+import DateTime
 #import smtplib
 # import requests
-# from weather import Weather
-# import re
+#from weather import Weather
+import re
 
 ###############################################################################################
 
@@ -137,23 +138,24 @@ def assistant(command):
 
 # next command
 
-#    elif 'terminal' in command:
-#        #subprocess.call(["terminator"])
-#        subprocess.call(['terminator','-T', 'First'])
-#        pyautogui.moveTo(2201, 1001, duration=.1)
-#        pyautogui.click()
-#        pyautogui.hotkey('winleft', 'right')
-#
-####### I may not implement this.I'm not sure it's that helpful
-#    elif 'open website' in command:
-#        reg_ex = re.search('open website (.+)', command)
-#        if reg_ex:
-#            domain = reg_ex.group(1)
-#            url = 'https://www.' + domain
-#            webbrowser.open(url)
-#            print('Done!')
-#        else:
-#            pass
+    elif 'terminal' in command:
+        #subprocess.call(["terminator"])
+        subprocess.call(['terminator','-T', 'First'])
+        pyautogui.moveTo(2201, 1001, duration=.1)
+        pyautogui.click()
+        pyautogui.hotkey('winleft', 'right')
+
+# next command
+
+    elif 'open website' in command:
+        reg_ex = re.search('open website (.+)', command)
+        if reg_ex:
+            domain = reg_ex.group(1)
+            url = 'https://www.' + domain
+            webbrowser.open(url)
+            print('Done!')
+        else:
+            pass
 
 ######## End Open Programs
 
@@ -285,14 +287,14 @@ def assistant(command):
     #     else:
     #         talkToMe('oops!I ran out of jokes')
 
-     elif 'current weather in' in command:
-         reg_ex = re.search('current weather in (.*)', command)
-         if reg_ex:
-             city = reg_ex.group(1)
-             weather = Weather()
-             location = weather.lookup_by_location(city)
-             condition = location.condition()
-             talkToMe('The Current weather in %s is %s The tempeture is %.1f degree' % (city, condition.text(), (int(condition.temp())-32)/1.8))
+#     elif 'current weather in' in command:
+#         reg_ex = re.search('current weather in (.*)', command)
+#         if reg_ex:
+#             city = reg_ex.group(1)
+#             weather = Weather()
+#             location = weather.lookup_by_location(city)
+#             condition = location.condition()
+#             talkToMe('The Current weather in %s is %s The tempeture is %.1f degree' % (city, condition.text(), (int(condition.temp())-32)/1.8))
     #
     # elif 'weather forecast in' in command:
     #     reg_ex = re.search('weather forecast in (.*)', command)
