@@ -184,10 +184,9 @@ def assistant(command):
         talkToMe("Choosing random song . . . ")
         with open('/home/bard/Code/Otto3/mymusiclist.txt') as f:
             mymusic = f.read().splitlines()
-            random_index = randrange(len(foo))
+            random_index = randrange(len(mymusic))
             song = mymusic[random_index]
-            print(song)
-            os.startfile(mymusic[song])
+            print(song)os.system('mpg123 -q mymusic[song])
     
 
 # next command
