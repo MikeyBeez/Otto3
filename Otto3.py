@@ -161,12 +161,12 @@ def assistant(command):
 ######## End Open Stuff
 
 ######## Query Stuff
-    elif 'wikipedia' in command:
+    elif 'quick info' in command:
         talkToMe("Searching Wikipedia . . . ")
         command = command.replace("wikipedia", "")
         command = command.replace("zoey", "")
         command = command.replace("zoe", "")
-        results = wikipedia.summary(command, sentences = 4)
+        results = wikipedia.summary(command, sentences = 2)
         talkToMe(results)
     
     elif 'look up' in command:
