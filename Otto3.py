@@ -103,6 +103,8 @@ def myCommand():
     r = sr.Recognizer()
 
     with sr.Microphone() as source:
+        talkToMe("To get started, you can say Zoey help.")
+        print("To get started, you can say Zoey help.")
         print('Ready\n ')
         talkToMe("Ready")
         r.pause_threshold = 1
@@ -391,8 +393,6 @@ def assistant(command):
 
 ######## START MAIN PROGRAM
 def main():
-    talkToMe('To get started, say, Zoey HELP')
-    print('Or say, ZOE HELP')
     myVars()
     aimylStuff()
     #print('If you are on Ubuntu, ignore the following ALSA errors')
