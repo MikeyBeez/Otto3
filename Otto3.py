@@ -169,7 +169,7 @@ def assistant(command):
         results = wikipedia.summary(command, sentences = 4)
         talkToMe(results)
     
-    elif 'summarize' in command:
+    elif 'look up' in command:
         talkToMe("Searching Wikipedia . . . ")
         command = command.replace("zoey", "")
         command = command.replace("zoe", "")
