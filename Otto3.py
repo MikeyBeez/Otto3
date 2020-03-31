@@ -10,10 +10,11 @@ import subprocess
 import os
 import webbrowser
 import DateTime
-#import smtplib
-# import requests
-#from weather import Weather
 import re
+import requests
+import wikipedia
+#import smtplib
+#from weather import Weather
 
 ###############################################################################################
 
@@ -116,7 +117,7 @@ def assistant(command):
 
 ######## Big If Statement for Executing Commands
 
-######## Open Programs
+######## Open Stuff
 
     if 'open reddit' in command:
         #reg_ex = re.search('open reddit (.*)', command)
@@ -157,7 +158,19 @@ def assistant(command):
         else:
             pass
 
-######## End Open Programs
+######## End Open Stuff
+
+######## Query Stuff
+    elif 'wikipedia' in command:
+        talkToMe("Searching Wikipedia . . . ")
+        command = command.replace("wikipedia", "")
+        command = command.replace("zoey", "")
+        results = wikipedia.summary(command, sentences = 4)
+        talkToMe(results)
+    
+# next command
+
+######## End Query Stuff
 
 ######## HAL Stuff
     elif 'open the pod door' in command:
