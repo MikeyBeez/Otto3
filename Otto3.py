@@ -103,10 +103,8 @@ def myCommand():
     r = sr.Recognizer()
 
     with sr.Microphone() as source:
-        talkToMe("To get started, you can say Zoey help.")
-        print("To get started, you can say Zoey help.")
-        print('Ready\n ')
-        talkToMe("Ready")
+        #talkToMe("To get started, you can say Zoey help.")
+        print("listening")
         r.pause_threshold = 1
         r.adjust_for_ambient_noise(source, duration=1)
         # Here we create the variable audio and fill it with captured audio.
@@ -399,6 +397,10 @@ def main():
     #print('pyaudio was compiled on a different linux')
     #print('If you can not bear them, you will need to recompile pyaudio.')
     #loop to continue executing multiple commands
+    talkToMe("To get started, You can say Zoey help.")
+    print("To get started, You can say Zoey help.")
+    talkToMe("Ready")
+    print("Ready")
 
     while True:
             output = myCommand()
