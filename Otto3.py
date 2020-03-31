@@ -233,7 +233,7 @@ def assistant(command, playcounter):
             #    print('Yes a projectM process was running')
             #else:
             #    print('No projectM process was running')
-            #    pmcommand = 'projectM-pulseaudio'
+            #    pmcommand = 'projectM-pulseaudio 2>/dev/null'
             #    subprocess.call(pmcommand, shell=True)
             #    pyautogui.moveTo(201, 200, duration=.1)
             #    pyautogui.click()
