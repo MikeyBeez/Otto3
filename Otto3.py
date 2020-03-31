@@ -207,7 +207,9 @@ def assistant(command):
             print(song)
             playthis = 'mpg123 -q ' + song
             # print(playthis)
-            os.system(playthis)
+            #os.system(playthis)
+            subprocess.call(playthis, shell=True)
+            assistant(command)
     
 # next command
 
@@ -313,7 +315,7 @@ def assistant(command):
                 #line = line.strip()
                 talkToMe(line)
 
-######## End Help Section
+######## End Help SectionEND
 
 ######## Miscelaneous
     elif 'what\'s up' in command:
