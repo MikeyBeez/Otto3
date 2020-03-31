@@ -34,7 +34,8 @@ from random import randrange
 
 def myVars():
     myDir = os.getcwd()
-    playcounter=0
+    global playcounter 
+    playcounter = 0
 
 ###############################################################################################
 ######## THIS IS AIML SETUP STUFF
@@ -211,8 +212,8 @@ def assistant(command):
             # print(playthis)
             #os.system(playthis)
             subprocess.call(playthis, shell=True)
-            if playcounter < 5:
-                playcounter += 1
+            if playcounter <= 2:
+                playcounter = playcounter + 1
                 assistant(command)
             else:
                 playcounter=0
@@ -403,16 +404,20 @@ def main():
     #print('pyaudio was compiled on a different linux')
     #print('If you can not bear them, you will need to recompile pyaudio.')
     #loop to continue executing multiple commands
-    talkToMe("To get started, You can say Zoey help.")
-    print("To get started, You can say Zoey help.")
-    talkToMe("Ready")
-    print("Ready")
+
+    #Uncomment the following line for noobs
+    #talkToMe("To get started, You can say Zoey help.")
+    print("To get started, You can say 'Zoey help.'")
+    print("To get started, You can say 'Zoey help.'")
+    print("To get started, You can say 'Zoey help.'")
+    print("To get started, You can say 'Zoey help.'")
+    print("To get started, You can say 'Zoey help.'")
+    print("To get started, You can say 'Zoey help.'")
 
     while True:
             output = myCommand()
-            #haloutput = halCommand()
 
-            # Below are the three sections for the three wake words:
+            # Below are the two sections for the three wake words:
 
             if 'zoe' in output:
                 print('The zoe responds:\n')
