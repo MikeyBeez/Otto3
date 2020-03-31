@@ -161,7 +161,7 @@ def assistant(command):
 ######## End Open Stuff
 
 ######## Query Stuff
-    elif 'quick info' in command:
+    elif 'wikipedia' in command:
         talkToMe("Searching Wikipedia . . . ")
         command = command.replace("wikipedia", "")
         command = command.replace("zoey", "")
