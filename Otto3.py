@@ -135,7 +135,7 @@ def myCommand():
 
 ######## BEGIN GIGANTIC ASSISTANT FUNCTION
 
-def assistant(command):
+def assistant(command, playcounter):
 
 ######## Big If Statement for Executing Commands
 
@@ -202,7 +202,8 @@ def assistant(command):
     
 # next command
     elif 'music' in command:
-        talkToMe("Choosing random song . . . ")
+        if playcounter = 0:
+            talkToMe("Choosing random song . . . ")
         with open('/home/bard/Code/Otto3/mymusiclist.txt') as f:
             mymusic = f.read().splitlines()
             random_index = randrange(len(mymusic))
@@ -214,7 +215,7 @@ def assistant(command):
             subprocess.call(playthis, shell=True)
             if playcounter <= 2:
                 playcounter = playcounter + 1
-                assistant(command)
+                assistant(command, playcounter)
             else:
                 playcounter=0
 
@@ -421,7 +422,7 @@ def main():
 
             if 'zoe' in output:
                 print('The zoe responds:\n')
-                assistant(output)
+                assistant(output, playcounter)
                 print(output)
 
             elif 'alice' in output:
