@@ -368,7 +368,7 @@ def assistant(command):
 
 ######## START MAIN PROGRAM
 def main():
-    talkToMe('To get started, say, HELP')
+    talkToMe('To get started, say, Zoey HELP')
 
     print('Or say, ZOE HELP')
     #print('If you are on Ubuntu, ignore the following ALSA errors')
