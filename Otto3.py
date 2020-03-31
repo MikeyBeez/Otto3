@@ -228,13 +228,18 @@ def assistant(command, playcounter):
             song = mymusic[random_index]
             print(song)
             playthis = 'mpg123 -q ' + song
-            # print(playthis)
-            #os.system(playthis)
             subprocess.call(playthis, shell=True)
-            if checkIfProcessRunning('projectM-pulseaudio'):
-                print('Yes a projectM process was running')
-            else:
-                print('No projectM process was running')
+            #if checkIfProcessRunning('projectM-pulseaudio'):
+            #    print('Yes a projectM process was running')
+            #else:
+            #    print('No projectM process was running')
+            #    pmcommand = 'projectM-pulseaudio'
+            #    subprocess.call(pmcommand, shell=True)
+            #    pyautogui.moveTo(201, 200, duration=.1)
+            #    pyautogui.click()
+            #    pyautogui.hotkey('winleft', 'up')
+            #    pyautogui.click()
+            #    pyautogui.hotkey('winleft', 'left')
             if playcounter <= 2:
                 playcounter = playcounter + 1
                 print(playcounter)
