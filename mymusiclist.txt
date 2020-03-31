@@ -20,7 +20,6 @@
 /home/bard/Music/Music/SoundGarden/Unknown\ Album/._Black\ Hole\ Sun.mp3
 /home/bard/Music/Music/Pink\ Floyd/Dark\ Side\ of\ the\ Moon/Dark\ Side\ of\ the\ Moon.mp3
 /home/bard/Music/Music/Pink\ Floyd/Dark\ Side\ of\ the\ Moon/._Dark\ Side\ of\ the\ Moon.mp3
-/home/bard/Music/Music/Mark\ Twain/The\ Adventures\ of\ Tom\ Sawyer\ (dramatic\ reading)/01\ 00\ -\ Preface.mp3
 /home/bard/Music/Music/Bob\ Dylan/Compilation/Shelter\ from\ the\ Storm.mp3
 /home/bard/Music/Music/Bob\ Dylan/Compilation/Maggie's\ Farm.mp3
 /home/bard/Music/Music/Bob\ Dylan/Compilation/Bob\ Dylan\ -\ Shelter\ f#12D5C.mp3
@@ -270,8 +269,6 @@
 /home/bard/Music/Music/Tone\ Loc/Unknown\ Album/Funky\ Cold\ Medena.mp3
 /home/bard/Music/Music/Tone\ Loc/Unknown\ Album/._Funky\ Cold\ Medena.mp3
 /home/bard/Music/Music/Peter\ Gabriel/Unknown\ Album/A\ Whiter\ Shade\ of\ Pale.mp3
-/home/bard/Music/Music/Museum\ of\ Science/WGBH\ Forum\ Network\ Lectures/._A\ Brief\ History\ of\ Time\ Travel.mp3
-/home/bard/Music/Music/Museum\ of\ Science/WGBH\ Forum\ Network\ Lectures/A\ Brief\ History\ of\ Time\ Travel.mp3
 /home/bard/Music/Music/Eric\ Clapton/w_Hendrix\ and\ Santana/After\ Midnight.mp3
 /home/bard/Music/Music/Eric\ Clapton/w_Hendrix\ and\ Santana/._After\ Midnight.mp3
 /home/bard/Music/Music/Wild\ Cherry/Unknown\ Album/Play\ That\ Funky\ Music.mp3
@@ -534,19 +531,6 @@
 /home/bard/Music/Music/Grand\ Master\ Flash/Unknown\ Album/._Electric\ Slide.mp3
 /home/bard/Music/Music/Grand\ Master\ Flash/Unknown\ Album/._White\ Lines.mp3
 /home/bard/Music/Music/Mikey\ Bee/Unknown\ Album/deepsh4.mp3
-/home/bard/Music/Music/Mikey\ Bee/Unknown\ Album/._Turn\ _1.mp3
-/home/bard/Music/Music/Mikey\ Bee/Unknown\ Album/Turn\ #1.mp3
-/home/bard/Music/Music/Mikey\ Bee/Unknown\ Album/._turn\ _4.mp3
-/home/bard/Music/Music/Mikey\ Bee/Unknown\ Album/Turn\ #1\ 1.mp3
-/home/bard/Music/Music/Mikey\ Bee/Unknown\ Album/._Joy\ #1.mp3
-/home/bard/Music/Music/Mikey\ Bee/Unknown\ Album/._deepsh4.mp3
-/home/bard/Music/Music/Mikey\ Bee/Unknown\ Album/Turn\ _1.mp3
-/home/bard/Music/Music/Mikey\ Bee/Unknown\ Album/turn\ _4.mp3
-/home/bard/Music/Music/Mikey\ Bee/Unknown\ Album/._Turn\ #1.mp3
-/home/bard/Music/Music/Mikey\ Bee/Unknown\ Album/._Turn\ #1\ 1.mp3
-/home/bard/Music/Music/Mikey\ Bee/Unknown\ Album/turn\ #4.mp3
-/home/bard/Music/Music/Mikey\ Bee/Unknown\ Album/Joy\ #1.mp3
-/home/bard/Music/Music/Mikey\ Bee/Unknown\ Album/._turn\ #4.mp3
 /home/bard/Music/Music/Ask\ The\ Fish/Unknown\ Album/Lonesome\ Road\ 1.mp3
 /home/bard/Music/Music/Ask\ The\ Fish/Unknown\ Album/._Lonesome\ Road.mp3
 /home/bard/Music/Music/Ask\ The\ Fish/Unknown\ Album/Lonesome\ Road.mp3
@@ -654,26 +638,6 @@
 /home/bard/Music/Music/Jimi\ Hendrix/Compilation/._Crosstown\ Traffic.mp3
 /home/bard/Music/Music/Jimi\ Hendrix/Compilation/If\ Six\ Was\ Nine\ 2.mp3
 /home/bard/Music/Music/Jimi\ Hendrix/Compilation/._06\ Blue\ Child.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/09\ Track\ 09.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/08\ Track\ 08.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/01\ Loving\ you.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/07\ Track\ 07.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/._04\ Track\ 04.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/._05\ Track\ 05.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/._03\ Track\ 03.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/02\ Track\ 02.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/05\ Track\ 05.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/._10\ Track\ 10.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/06\ Track\ 06.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/._06\ Track\ 06.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/._02\ Track\ 02.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/04\ Track\ 04.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/._01\ Loving\ you.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/._07\ Track\ 07.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/10\ Track\ 10.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/._08\ Track\ 08.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/03\ Track\ 03.mp3
-/home/bard/Music/Music/Harlem\ Girl/Unknown\ Album/._09\ Track\ 09.mp3
 /home/bard/Music/Music/Mary\ J.\ Blige\ ft.\ Biggie/Unknown\ Album/Mary\ J.\ Blige\ ft.\ Biggie\ -\ Real\ Love\ (Hip\ Hop\ Mix).mp3
 /home/bard/Music/Music/NWA/Unknown\ Album/Straight\ Outta\ Compton.mp3
 /home/bard/Music/Music/NWA/Unknown\ Album/Express\ yourself.mp3
@@ -700,7 +664,6 @@
 /home/bard/Music/Music/Big\ Audio\ Dynamite/Compilation/E=MC2.mp3
 /home/bard/Music/Music/Big\ Audio\ Dynamite/Compilation/Medicine\ Show.mp3
 /home/bard/Music/Music/Big\ Audio\ Dynamite/Compilation/The\ Globe.mp3
-/home/bard/Music/Music/92nd\ Street\ Y\ -\ \ Malcolm\ Gladwell\ \ with\ Robert\ Krulwich/92nd\ Street\ Y/92Y_\ Malcolm\ Gladwell.mp3
 /home/bard/Music/Music/Randy\ Crawford/Music\ From\ The\ Miramax\ Motion\ Picture/11\ Street\ Life.mp3
 /home/bard/Music/Music/The\ Gap\ Band/Unknown\ Album/01\ Party\ Train.mp3
 /home/bard/Music/Music/William\ DeVaughn/Unknown\ Album/BE\ THANKFUL\ FOR\ WHAT\ YOUVE\ GOT.mp3
@@ -923,8 +886,6 @@
 /home/bard/Music/Music/Red\ Hot\ Chili\ Peppers/Unknown\ Album/Foxxy\ Lady.mp3
 /home/bard/Music/Music/Red\ Hot\ Chili\ Peppers/Unknown\ Album/._Foxy\ Lady.mp3
 /home/bard/Music/Music/Red\ Hot\ Chili\ Peppers/Unknown\ Album/._Foxxy\ Lady.mp3
-/home/bard/Music/Music/Michael\ Bonsignore/Unknown\ Album/deepsh4.mp3
-/home/bard/Music/Music/Michael\ Bonsignore/Unknown\ Album/._deepsh4.mp3
 /home/bard/Music/Music/Nico\ Suave/Unknown\ Album/Mach\ Die\ Augen\ Auf.mp3
 /home/bard/Music/Music/Nico\ Suave/Unknown\ Album/._Mach\ Die\ Augen\ Auf.mp3
 /home/bard/Music/Music/The\ Grass\ Roots/Music\ From\ The\ Miramax\ Motion\ Picture/._13\ Midnight\ Confessions.mp3
@@ -932,8 +893,6 @@
 /home/bard/Music/Music/Scarface\ ft.\ Jay-Z\ &\ Beanie\ Siegel/Unknown\ Album/Guess\ Who's\ Back.mp3
 /home/bard/Music/Music/Kenny\ Burrell_John\ Coltrane/Allstar\ Duets/Freight\ Trane.mp3
 /home/bard/Music/Music/Kenny\ Burrell_John\ Coltrane/Allstar\ Duets/._Freight\ Trane.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/._Nanosensors_\ Bridging\ Many\ Gaps.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/A\ Team\ Approach\ to\ Engineering\ Design.mp3
 /home/bard/Music/Music/Pulp\ Fiction\ Soundtrack/Unknown\ Album/Girl,\ You'll\ Be\ A\ Woman\ Soon.mp3
 /home/bard/Music/Music/Pulp\ Fiction\ Soundtrack/Unknown\ Album/Girl,\ You'll\ Be\ A\ Woman\ S.mp3
 /home/bard/Music/Music/nice\ and\ smooth/Unknown\ Album/Hip-Hop\ Junkies\ (Spanish\ Fly\ Remix).mp3
@@ -1090,8 +1049,6 @@
 /home/bard/Music/Music/Eminem/Compilation/Hailies\ Song.mp3
 /home/bard/Music/Music/Eminem/Compilation/02\ The\ Real\ Slim\ Shady\ (Album\ Ver.mp3
 /home/bard/Music/Music/Eminem/Compilation/eminem\ -\ the\ marijuana\ mix.mp3
-/home/bard/Music/Music/92nd\ Street\ Y\ -\ Oliver\ Sacks\ with\ Robert\ Krulwich/92nd\ Street\ Y\ -\ Giants\ of\ Science/._92Y_\ Oliver\ Sacks.mp3
-/home/bard/Music/Music/92nd\ Street\ Y\ -\ Oliver\ Sacks\ with\ Robert\ Krulwich/92nd\ Street\ Y\ -\ Giants\ of\ Science/92Y_\ Oliver\ Sacks.mp3
 /home/bard/Music/Music/Tears\ For\ Fears/Modern\ Rock\ 1988-1989\ (Disc\ 1)/._09\ Sowing\ The\ Seeds\ Of\ Love.mp3
 /home/bard/Music/Music/Tears\ For\ Fears/Modern\ Rock\ 1988-1989\ (Disc\ 1)/09\ Sowing\ The\ Seeds\ Of\ Love.mp3
 /home/bard/Music/Music/Tears\ For\ Fears/Unknown\ Album/._Everybody\ wants\ to\ rule\ the\ world.mp3

@@ -1,7 +1,6 @@
 #!/home/bard/miniconda3/envs/Otto/bin/python3
 
 ######## IMPORT PYTHON3 MODULES
-
 from gtts import gTTS
 import speech_recognition as sr
 import aiml
@@ -18,7 +17,6 @@ from random import randrange
 #from weather import Weather
 
 ###############################################################################################
-
 ######## THIS IS AIML SETUP STUFF
 # aiml is the stuff for the Alice chatbot.
 # aiml is modular; so it's easy to add to it.
@@ -188,11 +186,9 @@ def assistant(command):
             song = mymusic[random_index]
             print(song)
             playthis = 'mpg123 -q ' + song
-            print(playthis)
+            # print(playthis)
             os.system(playthis)
     
-
-# next command
 # next command
 
 ######## End Query Stuff
@@ -274,9 +270,11 @@ def assistant(command):
 
 ######## Help Section
     elif 'help' in command:
-        talkToMe("There are three different wake words")
-        talkToMe("They are Help, Zoe, and Alice")
+        #talkToMe("There are three different wake words")
+        talkToMe("There are two different wake words")
+        talkToMe("They are Zoe, and Alice")
         talkToMe("Zoe runs the listed commands that follow")
+        talkToMe("You can always say ZOE HELP.")
         talkToMe("Also, you can always say ZOE list commands.")
         talkToMe("Alice is a chatbot")
         talkToMe("You can talk to Alice about anything")
@@ -396,20 +394,20 @@ def main():
                 talkToMe(response)
                 print(response)
 
-            elif 'help' in output:
-                talkToMe("There are three different wake words")
-                talkToMe("They are Help, Zoe, and Alice")
-                talkToMe("Zoe runs the listed commands that follow")
-                talkToMe("Also, you can always say ZOE list commands.")
-                talkToMe("Alice is a chatbot")
-                talkToMe("You can talk to Alice about anything")
-                talkToMe("But she's dumber than rocks.")
-                talkToMe("Say ALICE, what's the capital of England?")
-                talkToMe("To repeat this and get the list of commands,")
-                talkToMe("say, ZOE HELP")
-                talkToMe("Remember, the list is for the ZOE wake word.")
-
-
+#            elif 'help' in output:
+#                talkToMe("There are three different wake words")
+#                talkToMe("They are Help, Zoe, and Alice")
+#                talkToMe("Zoe runs the listed commands that follow")
+#                talkToMe("Also, you can always say ZOE list commands.")
+#                talkToMe("Alice is a chatbot")
+#                talkToMe("You can talk to Alice about anything")
+#                talkToMe("But she's dumber than rocks.")
+#                talkToMe("Say ALICE, what's the capital of England?")
+#                talkToMe("To repeat this and get the list of commands,")
+#                talkToMe("say, ZOE HELP")
+#                talkToMe("Remember, the list is for the ZOE wake word.")
+#
+#
             else:
                 pass
 
