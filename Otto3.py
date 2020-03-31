@@ -34,6 +34,7 @@ from random import randrange
 
 def myVars():
     myDir = os.getcwd()
+    playcounter=0
 
 ###############################################################################################
 ######## THIS IS AIML SETUP STUFF
@@ -210,7 +211,12 @@ def assistant(command):
             # print(playthis)
             #os.system(playthis)
             subprocess.call(playthis, shell=True)
-            assistant(command)
+            if playcounter < 5:
+                playcounter += 1
+                assistant(command)
+            else:
+                playcounter=0
+
     
 # next command
 
