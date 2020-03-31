@@ -1,15 +1,19 @@
- open reddit
- open youtube
- shutdown 
- reboot
- click
- other
- middle
- left
- right
- maximize 
- minimize 
- new terminal
- list commands
- what's up
- stop listening
+help
+list commands
+new terminal
+open reddit
+open youtube
+open website
+wikipedia
+look up
+click
+other
+middle
+left
+right
+maximize 
+minimize 
+what's up
+reboot
+shutdown 
+stop listening
