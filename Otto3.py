@@ -202,18 +202,15 @@ def assistant(command):
         talkToMe('I am sorry, Dave. I am afraid I can not do that.')
     
 # next command
-
     elif 'problem' in command:
         talkToMe('I think you know as well as I do')
 
 # next command
-
     elif 'talkin' in command:
         talkToMe('This mission is too important.')
         talkToMe(' I can not to allow you to jeopardize it.')
     
 # next command
-
     elif 'why do you say that' in command:
         talkToMe('I know that you want to disconnect me.')
         talkToMe('I can not allow that.')
@@ -243,24 +240,20 @@ def assistant(command):
         pyautogui.click()
 
 # next command
-
     elif 'other' in command:
         pyautogui.rightClick()
 
 # next command
-
     elif 'middle' in command:
         pyautogui.middleClick()
 
 # next command
-
     elif 'right' in command:
         pyautogui.moveTo(400, 400, duration=.1)
         pyautogui.click()
         pyautogui.hotkey('winleft', 'right')
 
 # next command
-
     elif 'left' in command:
         pyautogui.moveTo(2200, 1000, duration=.1)
         pyautogui.click()
@@ -273,7 +266,6 @@ def assistant(command):
         pyautogui.hotkey('winleft', 'up')
 
 # next command
-
     elif 'minimize' in command:
         pyautogui.click()
         pyautogui.hotkey('winleft', 'h')
@@ -281,7 +273,6 @@ def assistant(command):
 ######## End Interface With Desktop
 
 ######## Help Section
-
     elif 'help' in command:
         talkToMe("There are three different wake words")
         talkToMe("They are Help, Zoe, and Alice")
@@ -297,7 +288,6 @@ def assistant(command):
                 #line = line.strip()
                 talkToMe(line)
 # next command
-
     elif 'commands' in command:
         talkToMe("You can ask Zoe to")
         with open("commandlist") as file:
@@ -307,14 +297,11 @@ def assistant(command):
 
 ######## End Help Section
 
-
 ######## Miscelaneous
-
     elif 'what\'s up' in command:
         talkToMe('Just doing my thing')
 
 # next command
-
     # elif 'joke' in command:
     #     res = requests.get(
     #             'https://icanhazdadjoke.com/',
@@ -344,7 +331,6 @@ def assistant(command):
     #         for i in range(0,3):
     #             talkToMe('On %s will it %s. The maximum temperture will be %.1f degree.'
     #                      'The lowest temperature will be %.1f degrees.' % (forecasts[i].date(), forecasts[i].text(), (int(forecasts[i].high())-32)/1.8, (int(forecasts[i].low())-32)/1.8))
-
 
 #    elif 'email' in command:
 #        talkToMe('Who is the recipient?')
@@ -383,50 +369,50 @@ def assistant(command):
 ###############################################################################################
 
 ######## START MAIN PROGRAM
+def main():
+    talkToMe('To get started, say, HELP')
 
-talkToMe('To get started, say, HELP')
+    print('Or say, ZOE HELP')
+    #print('If you are on Ubuntu, ignore the following ALSA errors')
+    #print('pyaudio was compiled on a different linux')
+    #print('If you can not bear them, you will need to recompile pyaudio.')
 
-print('Or say, ZOE HELP')
-#print('If you are on Ubuntu, ignore the following ALSA errors')
-#print('pyaudio was compiled on a different linux')
-#print('If you can not bear them, you will need to recompile pyaudio.')
+    #loop to continue executing multiple commands
 
-#loop to continue executing multiple commands
+    while True:
+            output = myCommand()
+            #haloutput = halCommand()
 
-while True:
-        output = myCommand()
-        #haloutput = halCommand()
+            # Below are the three sections for the three wake words:
 
-        # Below are the three sections for the three wake words:
+            if 'zoe' in output:
+                print('The zoe responds:\n')
+                assistant(output)
+                print(output)
 
-        if 'zoe' in output:
-            print('The zoe responds:\n')
-            assistant(output)
-            print(output)
+            elif 'alice' in output:
+                print('Alice says:')
+                response = brainkernel.respond(output)
+                talkToMe(response)
+                print(response)
 
-        elif 'alice' in output:
-            print('Alice says:')
-            response = brainkernel.respond(output)
-            talkToMe(response)
-            print(response)
-
-        elif 'help' in output:
-            talkToMe("There are three different wake words")
-            talkToMe("They are Help, Zoe, and Alice")
-            talkToMe("Zoe runs the listed commands that follow")
-            talkToMe("Also, you can always say ZOE list commands.")
-            talkToMe("Alice is a chatbot")
-            talkToMe("You can talk to Alice about anything")
-            talkToMe("But she's dumber than rocks.")
-            talkToMe("Say ALICE, what's the capital of England?")
-            talkToMe("To repeat this and get the list of commands,")
-            talkToMe("say, ZOE HELP")
-            talkToMe("Remember, the list is for the ZOE wake word.")
+            elif 'help' in output:
+                talkToMe("There are three different wake words")
+                talkToMe("They are Help, Zoe, and Alice")
+                talkToMe("Zoe runs the listed commands that follow")
+                talkToMe("Also, you can always say ZOE list commands.")
+                talkToMe("Alice is a chatbot")
+                talkToMe("You can talk to Alice about anything")
+                talkToMe("But she's dumber than rocks.")
+                talkToMe("Say ALICE, what's the capital of England?")
+                talkToMe("To repeat this and get the list of commands,")
+                talkToMe("say, ZOE HELP")
+                talkToMe("Remember, the list is for the ZOE wake word.")
 
 
-        else:
-            pass
+            else:
+                pass
 
 ######## END MAIN PROGRAM
-
+main()
 ###############################################################################################

@@ -126,8 +126,6 @@
 /home/bard/Music/Music/Madonna/Compilation/borderline.mp3
 /home/bard/Music/Music/Madonna/Compilation/Die\ another\ Day.mp3
 /home/bard/Music/Music/Madonna/Compilation/Get\ Into\ The\ Groove\ 1.mp3
-/home/bard/Music/Music/92nd\ Street\ Y\ -\ James\ D.\ Watson\ with\ Eric\ Kandel/92nd\ Street\ Y\ -\ Giants\ of\ Science/92Y_\ James\ D.\ Watson\ and\ Eric\ Kandel.mp3
-/home/bard/Music/Music/92nd\ Street\ Y\ -\ James\ D.\ Watson\ with\ Eric\ Kandel/92nd\ Street\ Y\ -\ Giants\ of\ Science/._92Y_\ James\ D.\ Watson\ and\ Eric\ Kandel.mp3
 /home/bard/Music/Music/Roots/Phrenology-ADVANCE/05\ Rolling\ With\ Heat\ (featuring\ T.mp3
 /home/bard/Music/Music/Black\ Eyed\ Peas\ f_Justin\ Timberlake/Elephunk/Where\ Is\ The\ Love\ -\ Black\ Eyed\ Peas\ f_\ Justin\ Timberlake.mp3
 /home/bard/Music/Music/nerd_(the_neptunes)-13-bobby_j/Unknown\ Album/N.E.R.D.\ -\ Bobby\ James.mp3
@@ -308,14 +306,11 @@
 /home/bard/Music/Music/Red\ Hot\ Chillie\ Peppers/Unknown\ Album/._Under\ The\ Bridge.mp3
 /home/bard/Music/Music/Pam\ Grier/Music\ From\ The\ Miramax\ Motion\ Picture/._08\ Long\ Time\ Woman.mp3
 /home/bard/Music/Music/Pam\ Grier/Music\ From\ The\ Miramax\ Motion\ Picture/08\ Long\ Time\ Woman.mp3
-/home/bard/Music/Music/92nd\ Street\ Y\ -\ Dr.\ Eric\ Kandel\ with\ Robert\ Krulwich/92nd\ Street\ Y/1-01\ 92Y_\ Dr.\ Eric\ Kandel.mp3
-/home/bard/Music/Music/92nd\ Street\ Y\ -\ Dr.\ Eric\ Kandel\ with\ Robert\ Krulwich/92nd\ Street\ Y/._1-01\ 92Y_\ Dr.\ Eric\ Kandel.mp3
 /home/bard/Music/Music/Desmond\ Decker\ And\ the\ Aces/Unknown\ Album/._Isrealites.mp3
 /home/bard/Music/Music/Desmond\ Decker\ And\ the\ Aces/Unknown\ Album/Isrealites.mp3
 /home/bard/Music/Music/Lil\ Kim\ feat.\ 50\ Cent/La\ Bella\ Mafia/12\ Magic\ Stick.mp3
 /home/bard/Music/Music/Ton\ Loc/Unknown\ Album/._Wild\ Thang.mp3
 /home/bard/Music/Music/Ton\ Loc/Unknown\ Album/Wild\ Thang.mp3
-/home/bard/Music/Music/Florida\ Center\ for\ Instructional\ Technology/Lit2Go_\ The\ Rough\ Riders/01\ _Spanish-American\ War_\ The\ Rough\ Riders\ in\ Tampa_.mp3
 /home/bard/Music/Music/Brigit\ Nilsson/Recitals/07\ Principessa\ Di\ Morte.mp3
 /home/bard/Music/Music/Brigit\ Nilsson/Recitals/._03\ Euch\ Luften\ Die\ Mein\ Klugen.mp3
 /home/bard/Music/Music/Brigit\ Nilsson/Recitals/01\ Einsam\ In\ Truben\ Tagen.mp3
@@ -522,10 +517,6 @@
 /home/bard/Music/Music/Zappa/Compilation/._Ring\ Of\ Fire.mp3
 /home/bard/Music/Music/Various\ Artists/Slide\ Guitar_\ The\ Streamline\ Special/._Robert\ Johnson\ -\ Preachin'\ Blues.mp3
 /home/bard/Music/Music/Various\ Artists/Slide\ Guitar_\ The\ Streamline\ Special/Robert\ Johnson\ -\ Preachin'\ Blues.mp3
-/home/bard/Music/Music/Donald\ Sadoway/MIT\ OCW_\ 3.091\ Introduction\ to\ Solid\ State\ Chemistry,\ Fall\ 2004/1-31\ Lecture\ 31_\ (audio\ only)\ Protein\ Structure_\ Primary,\ Secondary,\ Tertiary;\ Denaturing\ of\ Proteins.mp3
-/home/bard/Music/Music/Donald\ Sadoway/MIT\ OCW_\ 3.091\ Introduction\ to\ Solid\ State\ Chemistry,\ Fall\ 2004/._1-31\ Lecture\ 31_\ (audio\ only)\ Protein\ Structure_\ Primary,\ Secondary,\ Tertiary;\ Denaturing\ of\ Proteins.mp3
-/home/bard/Music/Music/Donald\ Sadoway/MIT\ OCW_\ 3.091\ Introduction\ to\ Solid\ State\ Chemistry,\ Fall\ 2004/1-32\ Lecture\ 32_\ (audio\ only)\ Ipids_\ Self\ Assembly\ into\ Bilayers;\ Nucleic\ Acids,\ DNA,\ Encoding\ Information\ for\ Protein\ Synthesis;\ Electrochemistry\ of\ Batteries\ and\ Fuel\ Cells.mp3
-/home/bard/Music/Music/Donald\ Sadoway/MIT\ OCW_\ 3.091\ Introduction\ to\ Solid\ State\ Chemistry,\ Fall\ 2004/._1-32\ Lecture\ 32_\ (audio\ only)\ Ipids_\ Self\ Assembly\ into\ Bilayers;\ Nucleic\ Acids,\ DNA,\ Encoding\ Information\ for\ Protein\ Synthesis;\ Electrochemistry\ of\ Batteries\ and\ Fuel\ Cells.mp3
 /home/bard/Music/Music/Cantloop/Unknown\ Album/Flip\ Fantasia.mp3
 /home/bard/Music/Music/Cantloop/Unknown\ Album/._Flip\ Fantasia.mp3
 /home/bard/Music/Music/Cream/Compilation/White\ Room.mp3
@@ -710,8 +701,6 @@
 /home/bard/Music/Music/Big\ Audio\ Dynamite/Compilation/Medicine\ Show.mp3
 /home/bard/Music/Music/Big\ Audio\ Dynamite/Compilation/The\ Globe.mp3
 /home/bard/Music/Music/92nd\ Street\ Y\ -\ \ Malcolm\ Gladwell\ \ with\ Robert\ Krulwich/92nd\ Street\ Y/92Y_\ Malcolm\ Gladwell.mp3
-/home/bard/Music/Music/92nd\ Street\ Y\ -\ \ Malcolm\ Gladwell\ \ with\ Robert\ Krulwich/92nd\ Street\ Y/._92Y_\ Malcolm\ Gladwell.mp3
-/home/bard/Music/Music/Randy\ Crawford/Music\ From\ The\ Miramax\ Motion\ Picture/._11\ Street\ Life.mp3
 /home/bard/Music/Music/Randy\ Crawford/Music\ From\ The\ Miramax\ Motion\ Picture/11\ Street\ Life.mp3
 /home/bard/Music/Music/The\ Gap\ Band/Unknown\ Album/01\ Party\ Train.mp3
 /home/bard/Music/Music/William\ DeVaughn/Unknown\ Album/BE\ THANKFUL\ FOR\ WHAT\ YOUVE\ GOT.mp3
@@ -943,48 +932,6 @@
 /home/bard/Music/Music/Scarface\ ft.\ Jay-Z\ &\ Beanie\ Siegel/Unknown\ Album/Guess\ Who's\ Back.mp3
 /home/bard/Music/Music/Kenny\ Burrell_John\ Coltrane/Allstar\ Duets/Freight\ Trane.mp3
 /home/bard/Music/Music/Kenny\ Burrell_John\ Coltrane/Allstar\ Duets/._Freight\ Trane.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/Learning\ Vocabulary.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/Improving\ Usability.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/32\ You\ Sexy\ Thing.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/Lecture\ 36_\ Ecological\ Applica.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/computer\ animtion\ survey\ 1_16_08.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/The\ Origin\ of\ Emoticons.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/Secret\ to\ having\ your\ nights\ and\ weekends\ free.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/computer\ animtion\ survey\ 1_23_08.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/Lecture\ 35_\ Communities\ III\ (a.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/Bitch\ Betta\ Have\ My\ Money.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/._computer\ animtion\ survey\ 1_23_08.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/._Secret\ to\ having\ your\ nights\ and\ weekends\ free.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/._The\ Origin\ of\ Emoticons.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/._Improving\ Usability.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/._Lecture\ 35_\ Communities\ III\ (a.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/Quality\ Control.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/._computer\ animtion\ survey\ 1_16_08.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/._Learning\ Vocabulary.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/Achieving\ Your\ Goals-5\ Power\ User\ Tricks.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/._Lecture\ 36_\ Ecological\ Applica.mp3
-/home/bard/Music/Music/Mixed\ Lectures/Compilation/._Achieving\ Your\ Goals-5\ Power\ User\ Tricks.mp3
-/home/bard/Music/Music/DJ\ Kool/Compilation/01\ Let\ Me\ Clear\ My\ Throat.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/Nanosensors_\ Bridging\ Many\ Gaps.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/._Quantum\ Computation\ at\ Yale\ Takes\ a\ Quantum\ Leap.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/._I,\ Robat_\ \ Robots\ That\ Navigate\ the\ Way\ Bats\ and\ Dolphins\ Do.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/._Advancements\ in\ Biomedical\ Engineering.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/Clean\ Water\ for\ Cameroon_\ Yale's\ Student\ Engineers\ Without\ Borders\ Bring\ Lifesaving\ Water\ Systems\ to\ the\ Developing\ World..mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/._Clean\ Water\ for\ Cameroon_\ Yale's\ Student\ Engineers\ Without\ Borders\ Bring\ Lifesaving\ Water\ Systems\ to\ the\ Developing\ World..mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/I,\ Robat_\ \ Robots\ That\ Navigate\ the\ Way\ Bats\ and\ Dolphins\ Do.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/Establishment\ of\ the\ Yale\ School\ of\ Engineering\ and\ Applied\ Science.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/Advancements\ in\ Biomedical\ Engineering.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/Nanotechnology_\ Hype\ or\ Hope.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/._Nanotechnology_\ Hype\ or\ Hope.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/._A\ Team\ Approach\ to\ Engineering\ Design.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/._More\ Breakthrough\ Progress\ on\ Quantum\ Computing\ At\ Yale.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/._Einstein\ and\ the\ Quantum_\ The\ Quest\ of\ the\ Valiant\ Schwabian.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/More\ Breakthrough\ Progress\ on\ Quantum\ Computing\ At\ Yale.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/._Establishment\ of\ the\ Yale\ School\ of\ Engineering\ and\ Applied\ Science.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/._Privacy\ and\ Control\ of\ Personal\ Information\ in\ the\ Internet\ Age.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/Einstein\ and\ the\ Quantum_\ The\ Quest\ of\ the\ Valiant\ Schwabian.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/Privacy\ and\ Control\ of\ Personal\ Information\ in\ the\ Internet\ Age.mp3
-/home/bard/Music/Music/Yale\ Tech/Yale\ University/Quantum\ Computation\ at\ Yale\ Takes\ a\ Quantum\ Leap.mp3
 /home/bard/Music/Music/Yale\ Tech/Yale\ University/._Nanosensors_\ Bridging\ Many\ Gaps.mp3
 /home/bard/Music/Music/Yale\ Tech/Yale\ University/A\ Team\ Approach\ to\ Engineering\ Design.mp3
 /home/bard/Music/Music/Pulp\ Fiction\ Soundtrack/Unknown\ Album/Girl,\ You'll\ Be\ A\ Woman\ Soon.mp3
@@ -1019,17 +966,8 @@
 /home/bard/Music/Music/The\ Pretenders/Compilation/12\ Thin\ Line\ Between\ Love\ and\ Hate.mp3
 /home/bard/Music/Music/The\ Pretenders/Compilation/._Brass\ In\ Pocket.mp3
 /home/bard/Music/Music/Earth\ Wind\ and\ Fire/Unknown\ Album/September.mp3
-/home/bard/Music/Music/Alan\ Watts/Talks/Alan\ Watts\ -\ Limits\ Of\ Language.mp3
-/home/bard/Music/Music/Alan\ Watts/Talks/Alan\ Watts\ -\ Early\ Chinese\ Zen.mp3
-/home/bard/Music/Music/Alan\ Watts/Talks/01\ Tribute\ to\ Carl\ Jung\ -\ 1961.mp3
-/home/bard/Music/Music/Alan\ Watts/Talks/Lao\ Tzu's\ Tao\ Te\ Ching.mp3
-/home/bard/Music/Music/Alan\ Watts/Talks/Alan\ Watts\ -\ Eastern\ and\ Western\ Art.mp3
-/home/bard/Music/Music/Alan\ Watts/Talks/Alan\ Watts\ -\ Interviews\ Mrs\ Aldous\ (Laura)\ Huxley.mp3
-/home/bard/Music/Music/Alan\ Watts/Talks/Alan\ Watts\ -\ Tao\ of\ Philosophy\ -\ Coincidence\ of\ Opposites.mp3
 /home/bard/Music/Music/Elliot\ Easton's\ Tiki\ Gods/Music\ From\ The\ Miramax\ Motion\ Picture/._17\ Monte\ Carlo\ Nights.mp3
 /home/bard/Music/Music/Elliot\ Easton's\ Tiki\ Gods/Music\ From\ The\ Miramax\ Motion\ Picture/17\ Monte\ Carlo\ Nights.mp3
-/home/bard/Music/Music/Carnegie\ Mellon\ Tech\ Lectures/School\ of\ Computer\ Science/._Language\ Technologies.mp3
-/home/bard/Music/Music/Carnegie\ Mellon\ Tech\ Lectures/School\ of\ Computer\ Science/Language\ Technologies.mp3
 /home/bard/Music/Music/Herbie\ Hancock/Maiden\ Voyage/The\ eye\ of\ the\ hurricane.mp3
 /home/bard/Music/Music/Herbie\ Hancock/Unknown\ Album/Cantaloupe\ Island.mp3
 /home/bard/Music/Music/Shaggy\ ft\ Sean\ Paul\ \ \ \ \ \ \ \ \ \ x/Hey\ Sexy\ Lady\ Just\ Blaze\ Remix/Hey\ Sexy\ Lady\ Just\ Blaze\ Remix.mp3
