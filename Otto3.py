@@ -1,20 +1,39 @@
 #!/home/bard/miniconda3/envs/Otto/bin/python3
 
 ######## IMPORT PYTHON3 MODULES
+import pyaudio
+# from pygame import mixer
 from gtts import gTTS
-import speech_recognition as sr
 import aiml
+import speech_recognition as sr
 import pyautogui
 import subprocess
+# import socket
 import os
+# import glob
 import webbrowser
+from time import localtime, strftime
 import DateTime
 import re
 import requests
 import wikipedia
 from random import randrange
+
 #import smtplib
 #from weather import Weather
+
+###############################################################################################
+###############################################################################################
+#
+#   Welcome to Zoey -- your virtual assistant
+#
+#   You can say "Zoey Help" to get started
+#
+###############################################################################################
+###############################################################################################
+
+def myVars():
+    myDir = os.getcwd()
 
 ###############################################################################################
 ######## THIS IS AIML SETUP STUFF
@@ -23,26 +42,27 @@ from random import randrange
 # all the plugin files are in the "standard" subdirectory. 
 
 # make a variable for the file name
-BRAIN_FILE="brain.dump"
+def aimylStuff():
+    BRAIN_FILE="brain.dump"
 
-# This is creating a kernel object from the imported aiml module
-brainkernel = aiml.Kernel()
+    # This is creating a kernel object from the imported aiml module
+    brainkernel = aiml.Kernel()
 
-# To increase the startup speed of the bot, it is
-# possible to save the parsed aiml files as a dump.
-# This code checks if a dump exists, and
-# otherwise loads the aiml from the xml files.
-# Then it saves the brain dump as brain.dump.
+    # To increase the startup speed of the bot, it is
+    # possible to save the parsed aiml files as a dump.
+    # This code checks if a dump exists, and
+    # otherwise loads the aiml from the xml files.
+    # Then it saves the brain dump as brain.dump.
 
-# the kernel object we just made is empty.  We need to load it.
-if os.path.exists(BRAIN_FILE):
-    print("Loading from brain file: " + BRAIN_FILE)
-    brainkernel.loadBrain(BRAIN_FILE)
-else:
-    print("Parsing aiml files")
-    brainkernel.bootstrap(learnFiles="std-startup.aiml", commands="load aiml b")
-    print("Saving brain file: " + BRAIN_FILE)
-    brainkernel.saveBrain(BRAIN_FILE)
+    # the kernel object we just made is empty.  We need to load it.
+    if os.path.exists(BRAIN_FILE):
+        print("Loading from brain file: " + BRAIN_FILE)
+        brainkernel.loadBrain(BRAIN_FILE)
+    else:
+        print("Parsing aiml files")
+        brainkernel.bootstrap(learnFiles="std-startup.aiml", commands="load aiml b")
+        print("Saving brain file: " + BRAIN_FILE)
+        brainkernel.saveBrain(BRAIN_FILE)
 
 ######## END AIML SETUP STUFF
 
@@ -369,12 +389,12 @@ def assistant(command):
 ######## START MAIN PROGRAM
 def main():
     talkToMe('To get started, say, Zoey HELP')
-
     print('Or say, ZOE HELP')
+    myVars()
+    aimylStuff()
     #print('If you are on Ubuntu, ignore the following ALSA errors')
     #print('pyaudio was compiled on a different linux')
     #print('If you can not bear them, you will need to recompile pyaudio.')
-
     #loop to continue executing multiple commands
 
     while True:
@@ -394,6 +414,10 @@ def main():
                 talkToMe(response)
                 print(response)
 
+#  I removed the following help function and the wake word "help"
+#  It was starting accidentially, triggered by normal conversation.
+#  Now you must say "zoey help" to get this functionality.
+#
 #            elif 'help' in output:
 #                talkToMe("There are three different wake words")
 #                talkToMe("They are Help, Zoe, and Alice")
@@ -411,6 +435,7 @@ def main():
             else:
                 pass
 
-######## END MAIN PROGRAM
+######## END MAIN FUNCTION
+######## CALL MAIN FUNCTION
 main()
 ###############################################################################################
