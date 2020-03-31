@@ -18,6 +18,7 @@ import re
 import requests
 import wikipedia
 from random import randrange
+import psutil
 
 #import smtplib
 #from weather import Weather
@@ -36,6 +37,23 @@ def myVars():
     myDir = os.getcwd()
     global playcounter 
     playcounter = 0
+ 
+def checkIfProcessRunning(processName):
+    '''
+    Check if there is any running process that contains the given name processName.
+    '''
+    #Iterate over the all the running process
+    for proc in psutil.process_iter():
+        try:
+            # Check if process name contains the given name string.
+            if processName.lower() in proc.name().lower():
+                return True
+        except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+            pass
+    return False;
+
+
+
 
 ###############################################################################################
 ######## THIS IS AIML SETUP STUFF
@@ -202,7 +220,7 @@ def assistant(command, playcounter):
     
 # next command
     elif 'music' in command:
-        if playcounter = 0:
+        if playcounter == 0:
             talkToMe("Choosing random song . . . ")
         with open('/home/bard/Code/Otto3/mymusiclist.txt') as f:
             mymusic = f.read().splitlines()
@@ -213,8 +231,13 @@ def assistant(command, playcounter):
             # print(playthis)
             #os.system(playthis)
             subprocess.call(playthis, shell=True)
+            if checkIfProcessRunning('projectM-pulseaudio'):
+                print('Yes a projectM process was running')
+            else:
+                print('No projectM process was running')
             if playcounter <= 2:
                 playcounter = playcounter + 1
+                print(playcounter)
                 assistant(command, playcounter)
             else:
                 playcounter=0
