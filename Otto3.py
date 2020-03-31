@@ -13,6 +13,7 @@ import DateTime
 import re
 import requests
 import wikipedia
+from random import randrange
 #import smtplib
 #from weather import Weather
 
@@ -169,6 +170,7 @@ def assistant(command):
         results = wikipedia.summary(command, sentences = 2)
         talkToMe(results)
     
+# next command
     elif 'look up' in command:
         talkToMe("Searching Wikipedia . . . ")
         command = command.replace("zoey", "")
@@ -176,6 +178,16 @@ def assistant(command):
         results = wikipedia.summary(command)
         print(results)
         talkToMe(results)
+    
+# next command
+    elif 'music' in command:
+        talkToMe("Choosing random song . . . ")
+        with open('/home/bard/Code/Otto3/mymusiclist.txt') as f:
+            mymusic = f.read().splitlines()
+            random_index = randrange(len(foo))
+            song = mymusic[random_index]
+            print(song)
+            os.startfile(mymusic[song])
     
 
 # next command
