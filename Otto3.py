@@ -165,12 +165,14 @@ def assistant(command):
         talkToMe("Searching Wikipedia . . . ")
         command = command.replace("wikipedia", "")
         command = command.replace("zoey", "")
+        command = command.replace("zoe", "")
         results = wikipedia.summary(command, sentences = 4)
         talkToMe(results)
     
     elif 'summarize' in command:
         talkToMe("Searching Wikipedia . . . ")
         command = command.replace("zoey", "")
+        command = command.replace("zoe", "")
         results = wikipedia.summary(command)
         print(results)
         talkToMe(results)
