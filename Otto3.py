@@ -186,7 +186,8 @@ def assistant(command):
             mymusic = f.read().splitlines()
             random_index = randrange(len(mymusic))
             song = mymusic[random_index]
-            print(song)os.system('mpg123 -q mymusic[song])
+            print(song)
+            os.system('mpg123 -q mymusic[song])
     
 
 # next command
