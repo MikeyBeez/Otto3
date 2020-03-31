@@ -168,6 +168,14 @@ def assistant(command):
         results = wikipedia.summary(command, sentences = 4)
         talkToMe(results)
     
+    elif 'summary' in command:
+        talkToMe("Searching Wikipedia . . . ")
+        command = command.replace("zoey", "")
+        results = wikipedia.summary(command)
+        print(results)
+        talkToMe(results)
+    
+# next command
 # next command
 
 ######## End Query Stuff
