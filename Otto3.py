@@ -104,6 +104,7 @@ def myCommand():
 
     with sr.Microphone() as source:
         print('Ready\n ')
+        talkToMe("Ready")
         r.pause_threshold = 1
         r.adjust_for_ambient_noise(source, duration=1)
         # Here we create the variable audio and fill it with captured audio.
