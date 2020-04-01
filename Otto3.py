@@ -235,7 +235,7 @@ def assistant(command, playcounter):
             #    print('No projectM process was running')
             #    pmcommand = 'projectM-pulseaudio 2>/dev/null'
             #    subprocess.call(pmcommand, shell=True)
-            #    pyautogui.moveTo(201, 200, duration=.1)
+            #    pyautogui.moveTo(301, 300, duration=.1)
             #    pyautogui.click()
             #    pyautogui.hotkey('winleft', 'up')
             #    pyautogui.click()
@@ -251,6 +251,31 @@ def assistant(command, playcounter):
 # next command
 
 ######## End Query Stuff
+
+
+######## Polite Stuff
+    elif 'hello' in command or 'hi' in command:
+        talkToMe('Welcome.  I am Zoey, your virtual artificial intelligence assistant.')
+        print('Welcome.  I am Zoey, your virtual artificial intelligence assistant.')
+        talkToMe('How may I help you?')
+        print('How may I help you?')
+    
+# next command
+    elif 'thanks' in command or 'tanks' in command or 'thank you' in command:
+        talkToMe('You are welcome')
+        print('You are welcome')
+
+# next command
+    elif 'zoey' in command:
+        talkToMe('Yes Sir? What can I do for you sir?')
+        print('Yes Sir? What can I do for you sir?')
+
+# next command
+    elif 'how are you' in command or 'and you' in command or 'are you okay' in command:
+        talkToMe('Fine thank you.')
+        print('Fine thank you.')
+
+######## End Polite Stuff
 
 ######## HAL Stuff
     elif 'open the pod door' in command:
@@ -285,6 +310,8 @@ def assistant(command, playcounter):
 # next command
 
     elif 'stop listening' in command:
+        talkToMe("Goodbye, Sir, powering off")
+        print("Goodbye, Sir, powering off")
         quit()
 
 ######## End System Commands
