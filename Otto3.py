@@ -179,6 +179,14 @@ def assistant(command, playcounter):
 
 # next command
 
+    if 'dictation' in command:
+        url = 'https://docs.google.com/document/u/0/'
+        webbrowser.open(url)
+        print('Done!')
+        talkToMe('Please open a new document, Sir.')
+
+# next command
+
     elif 'terminal' in command:
         #subprocess.call(["terminator"])
         subprocess.call(['terminator','-T', 'First'])
