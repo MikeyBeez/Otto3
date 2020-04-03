@@ -187,7 +187,11 @@ def assistant(command, playcounter):
         pyautogui.hotkey('winleft', 'left')
         pyautogui.moveTo(359, 809, duration=.1)
         pyautogui.click()
-        pyautogui.hotkey('ctrl', 'shift', 's')
+
+# next command
+
+    if 'microphone' in command:
+        pyautogui.hotkey('ctrl', 'S')
 
 # next command
 
