@@ -469,6 +469,8 @@ def main():
     print("To get started, You can say 'Zoey help.'")
     print("To get started, You can say 'Zoey help.'")
     print("To get started, You can say 'Zoey help.'")
+    talkToMe("Hello, Sir.  How can I be of assistance?")
+    print("Hello, Sir.  How can I be of assistance?")
 
     while True:
             output = myCommand()
