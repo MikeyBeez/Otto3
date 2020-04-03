@@ -26,8 +26,8 @@
 /home/bard/Music/Music/No\ Doubt/Unknown\ Album/I\'m\ Just\ A\ Girl.mp3
 /home/bard/Music/Music/No\ Doubt/Unknown\ Album/Don\'t\ Speak.mp3
 /home/bard/Music/Music/dith\ Piaf/Unknown\ Album/Edith\ Piaff\ -\ La\ Vie\ En\ Rose.mp3
-/home/bard/Music/Music/John\ Cale,\ Nico,\ Brian\ Eno,\ Kevin\ Ayers/Unknown\ Album/Brian\ Eno\ &\ John\ Cale\ &\ Nico\ -\ Baby\'s\ On\ Fire.mp3
-/home/bard/Music/Music/Earth,\ Wind\ &\ Fire/Mega\ Hits\ Dance\ Classics\ \(Volume\ 5\)/Shining\ Star.mp3
+/home/bard/Music/Music/John\ Cale,\ Nico,\ Brian\ Eno,\ Kevin\ Ayers/Unknown\ Album/Brian\ Eno\ \&\ John\ Cale\ \&\ Nico\ -\ Baby\'s\ On\ Fire.mp3
+/home/bard/Music/Music/Earth,\ Wind\ \&\ Fire/Mega\ Hits\ Dance\ Classics\ \(Volume\ 5\)/Shining\ Star.mp3
 /home/bard/Music/Music/Miles\ Davis,\ Wayne\ Shorter,\ Herbie\ Hancock,\ Ron\ Carter,\ Tony\ Williams/Unknown\ Album/Masqualero.mp3
 /home/bard/Music/Music/Johnny\ Cash/Compilation/Rockabilly\ Blues.mp3
 /home/bard/Music/Music/Johnny\ Cash/Compilation/I\'ve\ Been\ Everywhere.mp3
@@ -72,7 +72,7 @@
 /home/bard/Music/Music/Sachmo/Unknown\ Album/Summertime.mp3
 /home/bard/Music/Music/Dr.\ Dre/2001/11\ The\ Next\ Episode\ \(feat\ Snoop\ D.mp3
 /home/bard/Music/Music/Dr.\ Dre/2001/06\ Xxplosive\ \(feat\ Hittman,\ Kurup.mp3
-/home/bard/Music/Music/Bone\ Thugs\ &\ Harmony/E.\ 1999\ Eternal/Crossroads.mp3
+/home/bard/Music/Music/Bone\ Thugs\ \&\ Harmony/E.\ 1999\ Eternal/Crossroads.mp3
 /home/bard/Music/Music/Mystikal/Shake\ Ya\ Ass\ \(12\ Inch\)/03\ Shake\ Ya\ Ass\ \(LP\ Version\).mp3
 /home/bard/Music/Music/Jackie\ Brown/Music\ From\ The\ Miramax\ Motion\ Picture/02\ Beaumont\'s\ Lament.mp3
 /home/bard/Music/Music/Madonna/Compilation/borderline.mp3
@@ -105,7 +105,7 @@
 /home/bard/Music/Music/George\ Clinton/Unknown\ Album/Booty\ Body\ Ready\ for\ the\ Parlament\ Funkadel.mp3
 /home/bard/Music/Music/George\ Clinton/Unknown\ Album/We\ Want\ The\ Funk.mp3
 /home/bard/Music/Music/Gap\ Band/Unknown\ Album/Double\ Dutch\ Bus.mp3
-/home/bard/Music/Music/5\ STERNE\ DELUXE/Unknown\ Album/Hip\ Hop\ Clowns\ &\ Party\ Rapper.mp3
+/home/bard/Music/Music/5\ STERNE\ DELUXE/Unknown\ Album/Hip\ Hop\ Clowns\ \&\ Party\ Rapper.mp3
 /home/bard/Music/Music/Dame\ Dash\ Feat\ Beans,\ Camron,/DJ\ Clue-Hate\ Me\ Now\ Pt.2/15\ The\ Champions.mp3
 /home/bard/Music/Music/Missy\ Elliott/Under\ Construction\ \(Advance\)/Gossip\ Folks\ Ft\ Ludacris.mp3
 /home/bard/Music/Music/Jeff\ Beck/Unknown\ Album/Beck\'s\ Bolero.mp3
@@ -168,7 +168,7 @@
 /home/bard/Music/Music/Wild\ Cherry/Unknown\ Album/Play\ That\ Funky\ Music.mp3
 /home/bard/Music/Music/Beck/Unknown\ Album/Wheres\ It\'s\ At.mp3
 /home/bard/Music/Music/Beck/Unknown\ Album/Loser.mp3
-/home/bard/Music/Music/Beck/Unknown\ Album/Nicotine\ &\ Gravy.mp3
+/home/bard/Music/Music/Beck/Unknown\ Album/Nicotine\ \&\ Gravy.mp3
 /home/bard/Music/Music/Beck/Unknown\ Album/Devil\'s\ Haicut.mp3
 /home/bard/Music/Music/Lou\ Reed/Unknown\ Album/Heroin.mp3
 /home/bard/Music/Music/Lou\ Reed/Unknown\ Album/Perfect\ Day.mp3
@@ -305,7 +305,7 @@
 /home/bard/Music/Music/Mott\ The\ Hoople/Compilation/All\ The\ Way\ From\ Memphis.mp3
 /home/bard/Music/Music/Mott\ The\ Hoople/Compilation/01\ Sweet\ Jane.mp3
 /home/bard/Music/Music/Mott\ The\ Hoople/Compilation/All\ The\ Young\ Dudes.mp3
-/home/bard/Music/Music/Beatles/Compilation/Beatles\ \(rarest\)\ -\ John\ Lennon\ &\ Rolling\ Stones\ -\ Yer\ Blues\ \(live\).mp3
+/home/bard/Music/Music/Beatles/Compilation/Beatles\ \(rarest\)\ -\ John\ Lennon\ \&\ Rolling\ Stones\ -\ Yer\ Blues\ \(live\).mp3
 /home/bard/Music/Music/Beatles/Compilation/Eleanor\ Rigby.mp3
 /home/bard/Music/Music/Beatles/Compilation/Fixing\ A\ Hole\ 2.mp3
 /home/bard/Music/Music/Beatles/Compilation/A\ Day\ In\ The\ Life.mp3
@@ -366,8 +366,8 @@
 /home/bard/Music/Music/Busta\ Rhymes/Compilation/Pass\ the\ Courvouisier.mp3
 /home/bard/Music/Music/Busta\ Rhymes/Compilation/Busta\ Rhymes\ ft.\ P.\ Diddy\ -\ Pa.mp3
 /home/bard/Music/Music/Busta\ Rhymes/Compilation/Pass\ the\ courvoisier\ 2.mp3
-/home/bard/Music/Music/Dungeon\ Family/Unknown\ Album/Low,\ Low\ \(feat.\ Cool\ Breeze\ &\ Pimp\ C\).mp3
-/home/bard/Music/Music/Dungeon\ Family/Unknown\ Album/Low,\ Low\ \(feat.\ Cool\ Breeze\ &\ Pimp\ C\)\ 1.mp3
+/home/bard/Music/Music/Dungeon\ Family/Unknown\ Album/Low,\ Low\ \(feat.\ Cool\ Breeze\ \&\ Pimp\ C\).mp3
+/home/bard/Music/Music/Dungeon\ Family/Unknown\ Album/Low,\ Low\ \(feat.\ Cool\ Breeze\ \&\ Pimp\ C\)\ 1.mp3
 /home/bard/Music/Music/Traffic/The\ Low\ Spark\ Of\ High\ Heeled\ B/02\ The\ Low\ Spark\ Of\ High-Heeled\ B.mp3
 /home/bard/Music/Music/Jimi\ Hendrix/Compilation/Angle.mp3
 /home/bard/Music/Music/Jimi\ Hendrix/Compilation/Purple\ Haze.mp3
@@ -392,7 +392,7 @@
 /home/bard/Music/Music/Jimi\ Hendrix/Compilation/13\ Waterfalls.mp3
 /home/bard/Music/Music/Jimi\ Hendrix/Compilation/10\ Crosstown\ Traffic.mp3
 /home/bard/Music/Music/Jimi\ Hendrix/Compilation/Purple\ Haze\ 2.mp3
-/home/bard/Music/Music/Jimi\ Hendrix/Compilation/Cherokee\ Jam\ \(Acoustic\ &\ Unplugged\).mp3
+/home/bard/Music/Music/Jimi\ Hendrix/Compilation/Cherokee\ Jam\ \(Acoustic\ \&\ Unplugged\).mp3
 /home/bard/Music/Music/Jimi\ Hendrix/Compilation/Red\ House.mp3
 /home/bard/Music/Music/Jimi\ Hendrix/Compilation/Castles\ Made\ Of\ Sand.mp3
 /home/bard/Music/Music/Jimi\ Hendrix/Compilation/Cocaine.mp3
@@ -418,7 +418,7 @@
 /home/bard/Music/Music/Stevie\ Ray\ Vaughan/Compilation/01\ Tribute\ to\ Robert\ Johnson\ -\ Un.mp3
 /home/bard/Music/Music/Stevie\ Ray\ Vaughan/Compilation/01\ Love\ Struck\ Baby.mp3
 /home/bard/Music/Music/Carlos\ Santana/Unknown\ Album/Acapulco\ Sunrise.mp3
-/home/bard/Music/Music/Tha\ Liks\ &\ The\ Neptunes/Unknown\ Album/The\ Best\ U\ Can.mp3
+/home/bard/Music/Music/Tha\ Liks\ \&\ The\ Neptunes/Unknown\ Album/The\ Best\ U\ Can.mp3
 /home/bard/Music/Music/Big\ Audio\ Dynamite/Compilation/Rush\ 2.mp3
 /home/bard/Music/Music/Big\ Audio\ Dynamite/Compilation/Rush.mp3
 /home/bard/Music/Music/Big\ Audio\ Dynamite/Compilation/E=MC2.mp3
@@ -463,7 +463,7 @@
 /home/bard/Music/Music/Rolling\ Stones/Compilation/Sympathy\ For\ The\ Devil.mp3
 /home/bard/Music/Music/Rolling\ Stones/Compilation/32\ Hang\ Fire.mp3
 /home/bard/Music/Music/Rolling\ Stones/Compilation/Ruby\ Tuesday.mp3
-/home/bard/Music/Music/Rolling\ Stones/Compilation/It\'s\ Only\ Rock\ &\ Roll.mp3
+/home/bard/Music/Music/Rolling\ Stones/Compilation/It\'s\ Only\ Rock\ \&\ Roll.mp3
 /home/bard/Music/Music/Rolling\ Stones/Compilation/Mother\'s\ Little\ Helper\ 2.mp3
 /home/bard/Music/Music/Rolling\ Stones/Compilation/06\ Far\ Away\ Eyes.mp3
 /home/bard/Music/Music/Rolling\ Stones/Compilation/01\ Angie.mp3
@@ -517,7 +517,7 @@
 /home/bard/Music/Music/OutKast/Compilation/02\ Two\ Dope\ Boyz\ \(In\ A\ Cadillac\).mp3
 /home/bard/Music/Music/OutKast/Compilation/Outkast.mp3
 /home/bard/Music/Music/OutKast/Compilation/13\ Y\'all\ Scared.mp3
-/home/bard/Music/Music/OutKast/Compilation/06\ Elevators\ \(Me\ &\ You\).mp3
+/home/bard/Music/Music/OutKast/Compilation/06\ Elevators\ \(Me\ \&\ You\).mp3
 /home/bard/Music/Music/OutKast/Compilation/09\ Wailin\'.mp3
 /home/bard/Music/Music/OutKast/Compilation/03\ ATLiens.mp3
 /home/bard/Music/Music/OutKast/Compilation/12\ Millennium.mp3
@@ -548,12 +548,12 @@
 /home/bard/Music/Music/Jamiroquai/Compilation/Little\ L.mp3
 /home/bard/Music/Music/Jamiroquai/Compilation/01\ Feel\ so\ Good.mp3
 /home/bard/Music/Music/Oingo\ Boingo/Unknown\ Album/Private\ Life.mp3
-/home/bard/Music/Music/Nappy\ Roots/Watermelon,\ Chicken\ &\ Gritz/04\ Hustla\ \(Clean\ Version\).mp3
+/home/bard/Music/Music/Nappy\ Roots/Watermelon,\ Chicken\ \&\ Gritz/04\ Hustla\ \(Clean\ Version\).mp3
 /home/bard/Music/Music/Red\ Hot\ Chili\ Peppers/Unknown\ Album/Foxy\ Lady.mp3
 /home/bard/Music/Music/Red\ Hot\ Chili\ Peppers/Unknown\ Album/Foxxy\ Lady.mp3
 /home/bard/Music/Music/Nico\ Suave/Unknown\ Album/Mach\ Die\ Augen\ Auf.mp3
 /home/bard/Music/Music/The\ Grass\ Roots/Music\ From\ The\ Miramax\ Motion\ Picture/13\ Midnight\ Confessions.mp3
-/home/bard/Music/Music/Scarface\ ft.\ Jay-Z\ &\ Beanie\ Siegel/Unknown\ Album/Guess\ Who\'s\ Back.mp3
+/home/bard/Music/Music/Scarface\ ft.\ Jay-Z\ \&\ Beanie\ Siegel/Unknown\ Album/Guess\ Who\'s\ Back.mp3
 /home/bard/Music/Music/Pulp\ Fiction\ Soundtrack/Unknown\ Album/Girl,\ You\'ll\ Be\ A\ Woman\ Soon.mp3
 /home/bard/Music/Music/Pulp\ Fiction\ Soundtrack/Unknown\ Album/Girl,\ You\'ll\ Be\ A\ Woman\ S.mp3
 /home/bard/Music/Music/nice\ and\ smooth/Unknown\ Album/Hip-Hop\ Junkies\ \(Spanish\ Fly\ Remix\).mp3
@@ -586,14 +586,14 @@
 /home/bard/Music/Music/Will\ Smith/Unknown\ Album/Freakin\'\ It.mp3
 /home/bard/Music/Music/Will\ Smith/Unknown\ Album/Gettin\ Jiggy\ With\ It.mp3
 /home/bard/Music/Music/2pac/Unknown\ Album/Heaven\ Got\ A\ Ghetto\ \(Hip\ hop\).mp3
-/home/bard/Music/Music/Chuck\ Berry/Unknown\ Album/Chuck\ Berry\ &\ Bo\ Diddley\ -\ Roll\ Over\ Beethoven.mp3
+/home/bard/Music/Music/Chuck\ Berry/Unknown\ Album/Chuck\ Berry\ \&\ Bo\ Diddley\ -\ Roll\ Over\ Beethoven.mp3
 /home/bard/Music/Music/Chuck\ Berry/Unknown\ Album/Johnny\ B\ Good.mp3
 /home/bard/Music/Music/Chuck\ Berry/Unknown\ Album/You\ Never\ Can\ Tell.mp3
 /home/bard/Music/Music/Chuck\ Berry/Pulp\ Fiction\ Soundtrack/You\ never\ can\ tell.mp3
 /home/bard/Music/Music/Beasty\ Boys/Unknown\ Album/Fight\ For\ Your\ Right.mp3
 /home/bard/Music/Music/Beasty\ Boys/Unknown\ Album/Sabotoage.mp3
 /home/bard/Music/Music/Queen/Unknown\ Album/Bohemian\ Rhapsody.mp3
-/home/bard/Music/Music/P.\ Diddy\ feat.\ Loon,\ Ginuwine\ &\ Mario\ Winans/P.\ Diddy\ &\ Bad\ Boy\ Records\ Present...\ We\ Invented\ The\ Remix/03\ I\ Need\ A\ Girl\ \(Part\ 2\).mp3
+/home/bard/Music/Music/P.\ Diddy\ feat.\ Loon,\ Ginuwine\ \&\ Mario\ Winans/P.\ Diddy\ \&\ Bad\ Boy\ Records\ Present...\ We\ Invented\ The\ Remix/03\ I\ Need\ A\ Girl\ \(Part\ 2\).mp3
 /home/bard/Music/Music/Wu-Tang\ Clan/Enter\ the\ Wu-Tang\(36\ chambers\)/Wu-Tang\ Clan\ ain\'t\ nu.mp3
 /home/bard/Music/Music/The\ Velvet\ Underground/Compilation/I\'m\ waiting\ for\ the\ man.mp3
 /home/bard/Music/Music/The\ Velvet\ Underground/Compilation/Venus\ In\ Furs.mp3
@@ -645,7 +645,7 @@
 /home/bard/Music/Music/Led\ Zeppelin/Compilation/Stairway\ to\ Heaven\ \(live\).mp3
 /home/bard/Music/Music/Led\ Zeppelin/Compilation/Led\ zeplin\ --\ House\ of\ the\ rising\ sun\ \(1\).mp3
 /home/bard/Music/Music/Led\ Zeppelin/Compilation/I\ got\ a\ woman.mp3
-/home/bard/Music/Music/Dmx,\ Sean\ Paul\ &amp;\ Mr.\ Vegas/Belly/Here\ comes\ da\ boom.mp3
+/home/bard/Music/Music/Dmx,\ Sean\ Paul\ \&amp;\ Mr.\ Vegas/Belly/Here\ comes\ da\ boom.mp3
 /home/bard/Music/Music/Right\ Said\ Fred/I\'m\ Too/I\'m\ Too.mp3
 /home/bard/Music/Music/Nate\ Dogg/Unknown\ Album/Area\ Codes.mp3
 /home/bard/Music/Music/DJ\ Spooky/Unknown\ Album/Galactic\ Funk.mp3
@@ -666,7 +666,7 @@
 /home/bard/Music/Music/Eminem/Compilation/Forgot\ About\ Dre.mp3
 /home/bard/Music/Music/Eminem/Compilation/The\ Way\ I\ Am.mp3
 /home/bard/Music/Music/Eminem/Compilation/Drug\ Ballad.mp3
-/home/bard/Music/Music/Eminem/Compilation/Eminem\ &\ Shaggy\ -\ Eye\ Of\ The\ Tiger\ \(DJ\ Defcon\ Remix\).mp3.mp3
+/home/bard/Music/Music/Eminem/Compilation/Eminem\ \&\ Shaggy\ -\ Eye\ Of\ The\ Tiger\ \(DJ\ Defcon\ Remix\).mp3.mp3
 /home/bard/Music/Music/Eminem/Compilation/Shroomz.mp3
 /home/bard/Music/Music/Eminem/Compilation/Ice\ Ice\ Baby\ VS\ The\ Real\ Slim\ Shady\ \(DJZ\ remix\).mp3
 /home/bard/Music/Music/Eminem/Compilation/Sweet\ Home\ Alabama\ -\ 8-mile.mp3
