@@ -184,6 +184,9 @@ def assistant(command, playcounter):
         webbrowser.open(url)
         print('Done!')
         talkToMe('Please open a new document, Sir.')
+        pyautogui.hotkey('winleft', 'left')
+        pyautogui.moveTo(359, 809, duration=.1)
+        pyautogui.click()
 
 # next command
 
