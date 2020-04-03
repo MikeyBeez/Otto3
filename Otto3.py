@@ -183,10 +183,11 @@ def assistant(command, playcounter):
         url = 'https://docs.google.com/document/u/0/'
         webbrowser.open(url)
         print('Done!')
-        talkToMe('Please open a new document, Sir.')
+        talkToMe('Opening a new document, Sir.')
         pyautogui.hotkey('winleft', 'left')
         pyautogui.moveTo(359, 809, duration=.1)
         pyautogui.click()
+        pyautogui.hotkey('ctrl', 'shift', 's')
 
 # next command
 
