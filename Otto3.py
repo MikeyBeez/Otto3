@@ -184,8 +184,15 @@ def assistant(command, playcounter):
         webbrowser.open(url)
         print('Done!')
         talkToMe('Opening a new document, Sir.')
-        pyautogui.hotkey('winleft', 'left')
-        pyautogui.moveTo(359, 809, duration=.1)
+        # Maximize the window
+        pyautogui.hotkey('winleft', 'up')
+        # I have a 4k display.  You may need to find 
+        # your own point.  I used 
+        # xdotool getmouselocation --shell
+        # to find the location where to click
+        # to open a blank document.  You may need to 
+        # change duration if your internet is slow.
+        pyautogui.moveTo(777, 777, duration=.3)
         pyautogui.click()
 
 # next command
