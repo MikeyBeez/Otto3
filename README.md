@@ -77,3 +77,5 @@ M
 NOTES:
 
 https://techwithtim.net/tutorials/voice-assistant/opening-programs/
+
+../../julius/julius/julius -C mic.jconf -dnnconf dnn.jconf 2>/dev/null
