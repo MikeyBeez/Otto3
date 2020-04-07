@@ -73,3 +73,7 @@ others can easily contribute.
 
 Cheers!
 M
+
+NOTES:
+
+https://techwithtim.net/tutorials/voice-assistant/opening-programs/
