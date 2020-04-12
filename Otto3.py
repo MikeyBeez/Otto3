@@ -190,7 +190,6 @@ def assistant(command, playcounter):
         # your own point.  I used 
         # xdotool getmouselocation --shell
         # to find the location where to click
-        # to open a blank document.  You may need to 
         # change duration if your internet is slow.
         pyautogui.moveTo(777, 777, duration=.3)
         pyautogui.click()
