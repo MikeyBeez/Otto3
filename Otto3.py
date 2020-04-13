@@ -19,6 +19,7 @@ import requests
 import wikipedia
 from random import randrange
 import psutil
+import sys
 
 #import smtplib
 #from weather import Weather
@@ -37,7 +38,17 @@ def myVars():
     myDir = os.getcwd()
     global playcounter 
     playcounter = 0
-    wakeWords = ["julia", "julia"]
+    wakeWord = "julia" 
+
+def runJulius():
+    try:
+        for lineTest in iter(sys.stdin.readline, b''):
+            if "juli" in lineTest:
+                print (lineTest)
+    except KeyboardInterrupt:
+        sys.stdout.flush()
+        pass
+
  
 def checkIfProcessRunning(processName):
     '''
@@ -478,6 +489,7 @@ def assistant(command, playcounter):
 ######## START MAIN PROGRAM
 def main():
     myVars()
+    runJulius()
     aimylStuff()
     #print('If you are on Ubuntu, ignore the following ALSA errors')
     #print('pyaudio was compiled on a different linux')
