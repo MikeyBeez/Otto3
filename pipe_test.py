@@ -3,8 +3,8 @@ import sys
 k = 0
 try:
    for line in iter(sys.stdin.readline, b''):
-      k = k + 1
-      if "julius" in line:
+      #k = k + 1
+      if "julius" in line or "julia" in line:
         print (line)
 except KeyboardInterrupt:
    sys.stdout.flush()

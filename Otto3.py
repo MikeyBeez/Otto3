@@ -26,9 +26,9 @@ import psutil
 ###############################################################################################
 ###############################################################################################
 #
-#   Welcome to Zoey -- your virtual assistant
+#   Welcome to Julia -- your virtual assistant
 #
-#   You can say "Zoey Help" to get started
+#   You can say "Julia Help" to get started
 #
 ###############################################################################################
 ###############################################################################################
@@ -37,6 +37,7 @@ def myVars():
     myDir = os.getcwd()
     global playcounter 
     playcounter = 0
+    wakeWords = ["julia", "julia"]
  
 def checkIfProcessRunning(processName):
     '''
@@ -123,7 +124,7 @@ def myCommand():
     r = sr.Recognizer()
 
     with sr.Microphone() as source:
-        #talkToMe("To get started, you can say Zoey help.")
+        #talkToMe("To get started, you can say julia help.")
         print("listening")
         r.pause_threshold = 1
         r.adjust_for_ambient_noise(source, duration=1)
@@ -226,16 +227,16 @@ def assistant(command, playcounter):
     elif 'wikipedia' in command:
         talkToMe("Searching Wikipedia . . . ")
         command = command.replace("wikipedia", "")
-        command = command.replace("zoey", "")
-        command = command.replace("zoe", "")
+        command = command.replace("julia", "")
+        command = command.replace("julia", "")
         results = wikipedia.summary(command, sentences = 2)
         talkToMe(results)
     
 # next command
     elif 'look up' in command:
         talkToMe("Searching Wikipedia . . . ")
-        command = command.replace("zoey", "")
-        command = command.replace("zoe", "")
+        command = command.replace("julia", "")
+        command = command.replace("julia", "")
         results = wikipedia.summary(command)
         print(results)
         talkToMe(results)
@@ -277,8 +278,8 @@ def assistant(command, playcounter):
 
 ######## Polite Stuff
     elif 'hello' in command or 'hi' in command:
-        talkToMe('Welcome.  I am Zoey, your virtual artificial intelligence assistant.')
-        print('Welcome.  I am Zoey, your virtual artificial intelligence assistant.')
+        talkToMe('Welcome.  I am Julia, your virtual artificial intelligence assistant.')
+        print('Welcome.  I am Julia, your virtual artificial intelligence assistant.')
         talkToMe('How may I help you?')
         print('How may I help you?')
     
@@ -288,9 +289,9 @@ def assistant(command, playcounter):
         print('You are welcome')
 
 # next command
-    elif 'zoey' in command:
-        talkToMe('Yes Sir? What can I do for you sir?')
-        print('Yes Sir? What can I do for you sir?')
+    #elif 'julia' in command:
+    #    talkToMe('Yes Sir? What can I do for you sir?')
+    #    print('Yes Sir? What can I do for you sir?')
 
 # next command
     elif 'how are you' in command or 'and you' in command or 'are you okay' in command:
@@ -380,14 +381,14 @@ def assistant(command, playcounter):
     elif 'help' in command:
         #talkToMe("There are three different wake words")
         talkToMe("There are two different wake words")
-        talkToMe("They are Zoe, and Alice")
-        talkToMe("Zoe runs the listed commands that follow")
-        talkToMe("You can always say ZOE HELP.")
-        talkToMe("Also, you can always say ZOE list commands.")
+        talkToMe("They are Julia, and Alice")
+        talkToMe("Julia runs the listed commands that follow")
+        talkToMe("You can always say JULIA HELP.")
+        talkToMe("Also, you can always say JULIA list commands.")
         talkToMe("Alice is a chatbot")
         talkToMe("You can talk to Alice about anything")
         talkToMe("But she's dumber than rocks.")
-        talkToMe("You can ask Zoe to")
+        talkToMe("You can ask Julia to")
 
         with open("commandlist") as file:
             for line in file:
@@ -395,7 +396,7 @@ def assistant(command, playcounter):
                 talkToMe(line)
 # next command
     elif 'commands' in command:
-        talkToMe("You can ask Zoe to")
+        talkToMe("You can ask Julia to")
         with open("commandlist") as file:
             for line in file:
                 #line = line.strip()
@@ -484,13 +485,13 @@ def main():
     #loop to continue executing multiple commands
 
     #Uncomment the following line for noobs
-    #talkToMe("To get started, You can say Zoey help.")
-    print("To get started, You can say 'Zoey help.'")
-    print("To get started, You can say 'Zoey help.'")
-    print("To get started, You can say 'Zoey help.'")
-    print("To get started, You can say 'Zoey help.'")
-    print("To get started, You can say 'Zoey help.'")
-    print("To get started, You can say 'Zoey help.'")
+    #talkToMe("To get started, You can say julia help.")
+    print("To get started, You can say 'Julia help.'")
+    print("To get started, You can say 'Julia help.'")
+    print("To get started, You can say 'Julia help.'")
+    print("To get started, You can say 'Julia help.'")
+    print("To get started, You can say 'Julia help.'")
+    print("To get started, You can say 'Julia help.'")
     talkToMe("Hello, Sir.  How can I be of assistance?")
     print("Hello, Sir.  How can I be of assistance?")
 
@@ -499,8 +500,8 @@ def main():
 
             # Below are the two sections for the three wake words:
 
-            if 'zoe' in output:
-                print('The zoe responds:\n')
+            if 'juli' in output:
+                print('The Julia responds:\n')
                 assistant(output, playcounter)
                 print(output)
 
@@ -512,20 +513,20 @@ def main():
 
 #  I removed the following help function and the wake word "help"
 #  It was starting accidentially, triggered by normal conversation.
-#  Now you must say "zoey help" to get this functionality.
+#  Now you must say "julia help" to get this functionality.
 #
 #            elif 'help' in output:
 #                talkToMe("There are three different wake words")
-#                talkToMe("They are Help, Zoe, and Alice")
-#                talkToMe("Zoe runs the listed commands that follow")
-#                talkToMe("Also, you can always say ZOE list commands.")
+#                talkToMe("They are Help, Julia, and Alice")
+#                talkToMe("Julia runs the listed commands that follow")
+#                talkToMe("Also, you can always say JULIA list commands.")
 #                talkToMe("Alice is a chatbot")
 #                talkToMe("You can talk to Alice about anything")
 #                talkToMe("But she's dumber than rocks.")
 #                talkToMe("Say ALICE, what's the capital of England?")
 #                talkToMe("To repeat this and get the list of commands,")
-#                talkToMe("say, ZOE HELP")
-#                talkToMe("Remember, the list is for the ZOE wake word.")
+#                talkToMe("say, JULIA HELP")
+#                talkToMe("Remember, the list is for the JULIA wake word.")
 #
 #
             else:
