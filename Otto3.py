@@ -61,12 +61,11 @@ def checkIfProcessRunning(processName):
     for proc in psutil.process_iter():
         try:
             # Check if process name contains the given name string.
-            if processName.lower() in proc.name().lower()
+            if processName.lower() in proc.name().lower():
                 return True
         except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
             pass
-    return False;
-
+    return False
 
 ###############################################################################################
 ######## THIS IS AIML SETUP STUFF
@@ -108,7 +107,6 @@ def aimylStuff():
 
 def talkToMe(mytext):
     # "speaks audio passed as argument"
-
     print(mytext)
     # can handle multiline text.
     #for line in mytext.splitlines():
@@ -130,11 +128,9 @@ def talkToMe(mytext):
 
 def myCommand():
     # "listens for commands"
-
     # We imported this up above "import speech_recognition as sr"
     # We create a recognizer object and assign it to the variable r.
     r = sr.Recognizer()
-
     with sr.Microphone() as source:
         #talkToMe("To get started, you can say julia help.")
         print("listening")
@@ -142,22 +138,18 @@ def myCommand():
         r.adjust_for_ambient_noise(source, duration=1)
         # Here we create the variable audio and fill it with captured audio.
         audio = r.listen(source)
-
     try:
         # Here we create the variable command and fill it with text converted from audio.
         command = r.recognize_google(audio).lower()
         print('You said: ' + command + '\n')
-
     # This except block is catching errors if the try block fails.
     # loop back to continue to listen for commands if unrecognizable speech is received
     # except sr.UnknownValueError:
     except Exception as e:
         print('waiting . . .  ' +str(e))
         command = myCommand()
-
     # This tiny line is important. It is returning the command variable with the
     # new value we just set.  It will be used later.
-
     return command
 
 ######## END STT SPEECH TO TEXT FUNCTION THAT RETURNS THE VARIABLE: command
@@ -212,8 +204,6 @@ def assistant(command, playcounter):
     if 'search' in command:
         url = 'https://google.com'
         webbrowser.open_new_tab(url)
-        print('Done!')
-        #talkToMe('Opening a new document, Sir.')
         # Maximize the window
         pyautogui.hotkey('winleft', 'up')
         # I have a 4k display.  You may need to find 
@@ -533,7 +523,7 @@ def main():
     print("To get started, You can say 'Julia help.'")
     print("To get started, You can say 'Julia help.'")
     print("To get started, You can say 'Julia help.'")
-    talkToMe("Hello, Sir.  How can I be of assistance?")
+    #talkToMe("Hello, Sir.  How can I be of assistance?")
     print("Hello, Sir.  How can I be of assistance?")
 
     while True:
