@@ -40,7 +40,9 @@ def myVars():
     playcounter = 0
     wakeWord = "julia" 
 
+####Not impemented yet
 def runJulius():
+
     try:
         for lineTest in iter(sys.stdin.readline, b''):
             if "juli" in lineTest:
@@ -49,7 +51,8 @@ def runJulius():
         sys.stdout.flush()
         pass
 
- 
+####End Not impemented yet
+
 def checkIfProcessRunning(processName):
     '''
     Check if there is any running process that contains the given name processName.
@@ -58,13 +61,11 @@ def checkIfProcessRunning(processName):
     for proc in psutil.process_iter():
         try:
             # Check if process name contains the given name string.
-            if processName.lower() in proc.name().lower():
+            if processName.lower() in proc.name().lower()
                 return True
         except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
             pass
     return False;
-
-
 
 
 ###############################################################################################
@@ -204,6 +205,27 @@ def assistant(command, playcounter):
         # to find the location where to click
         # change duration if your internet is slow.
         pyautogui.moveTo(777, 777, duration=.3)
+        pyautogui.click()
+
+# next command
+
+    if 'search' in command:
+        url = 'https://google.com'
+        webbrowser.open_new_tab(url)
+        print('Done!')
+        #talkToMe('Opening a new document, Sir.')
+        # Maximize the window
+        pyautogui.hotkey('winleft', 'up')
+        # I have a 4k display.  You may need to find 
+        # your own point.  I used 
+        # xdotool getmouselocation --shell
+        # to find the location where to click
+        # change duration if your internet is slow.
+        pyautogui.moveTo(2716, 1209, duration=.3)
+        pyautogui.click()
+        pyautogui.moveTo(1302, 546, duration=.3)
+        pyautogui.click()
+        pyautogui.moveTo(2716, 1209, duration=.3)
         pyautogui.click()
 
 # next command
@@ -489,7 +511,14 @@ def assistant(command, playcounter):
 ######## START MAIN PROGRAM
 def main():
     myVars()
-    runJulius()
+    if checkIfProcessRunning('julius'):
+        print("julius is running")
+    else:
+        #linetest = subprocess.call('sh /home/bard/Code/Otto3/catchjuli.sh')
+        #print(linetest)
+        #runJulius()
+        pass
+
     aimylStuff()
     #print('If you are on Ubuntu, ignore the following ALSA errors')
     #print('pyaudio was compiled on a different linux')
