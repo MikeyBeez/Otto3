@@ -1,4 +1,6 @@
 # Otto3
+
+I'm at a crossroads here on 4/11/20.  I have new code that I want to add.  Perhaps it's time to make a new branch?  I want to have a program called julius that does STT recognize my wake word.  That way, I'm not hammering Google all the time.  The problem is, how can I expect other people to install another component piece of software?   I also want to install a flask program to run this so it's not a command line application. At what point does this kind of modern modular programming become too complex?     
  
 As of March 27, 2020, I'm starting to write this file; so it's going to be tough to install this right now.  Your best bet is to watch a video I recorded recently, but I can't say it's good enough.  That's going to depend on how good you are at making github software work.  Usually, you need to know a lot, but I'll try to make this very easy and educational.  If you still have trouble check back soon.  I've decided to stick with this project for now and make it all work. I'll be setting up a new virtual environment soon to do a fresh install myself.  I plan to make this a video and make copious notes for this readme file.    
 
