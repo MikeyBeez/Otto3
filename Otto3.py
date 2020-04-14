@@ -152,7 +152,8 @@ def myCommand():
         command = myCommand()
     # Use Google for speech to text.  Google is more accurate than pocketsphinx.  Basically pocetsphinx sucks, but it's a good local engin for a wake word.
     try:
-        if "julia" in command or "alice" in command:
+        #if "julia" in command or "alice" in command:
+        if "julia" in command:
             command = r.recognize_google(audio).lower()
             print('Google thinks you said: ' + command + '\n')
 
