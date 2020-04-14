@@ -151,13 +151,17 @@ def myCommand():
         print('waiting . . .  ' +str(e))
         command = myCommand()
     # Use Google for speech to text.  Google is more accurate than pocketsphinx.  Basically pocetsphinx sucks, but it's a good local engin for a wake word.
-    if "julia" in command:
-        command = r.recognize_google(audio).lower()
-        print('Google thinks you said: ' + command + '\n')
+    try:
+        if "julia" in command:
+            command = r.recognize_google(audio).lower()
+            print('Google thinks you said: ' + command + '\n')
 
-    # This tiny line is important. It is returning the command variable with the
-    # new value we just set.  It will be used later.
-    return command
+        # This tiny line is important. It is returning the command variable with the
+        # new value we just set.  It will be used later.
+        return command
+    except Exception as e:
+        print('problem with Google STT')
+        pass
 
 ######## END STT SPEECH TO TEXT FUNCTION THAT RETURNS THE VARIABLE: command
 
