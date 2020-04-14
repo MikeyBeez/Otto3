@@ -6,6 +6,7 @@ import pyaudio
 from gtts import gTTS
 import aiml
 import speech_recognition as sr
+import pocketsphinx
 import pyautogui
 import subprocess
 # import socket
@@ -140,7 +141,8 @@ def myCommand():
         audio = r.listen(source)
     try:
         # Here we create the variable command and fill it with text converted from audio.
-        command = r.recognize_google(audio).lower()
+        #command = r.recognize_google(audio).lower()
+        command = r.recognize_sphinx(audio).lower()
         print('You said: ' + command + '\n')
     # This except block is catching errors if the try block fails.
     # loop back to continue to listen for commands if unrecognizable speech is received
