@@ -141,15 +141,20 @@ def myCommand():
         audio = r.listen(source)
     try:
         # Here we create the variable command and fill it with text converted from audio.
-        #command = r.recognize_google(audio).lower()
+        #Use pocketsphinx for wake word
         command = r.recognize_sphinx(audio).lower()
-        print('You said: ' + command + '\n')
+        print('Pocket Stinks thinks you said: ' + command + '\n')
     # This except block is catching errors if the try block fails.
     # loop back to continue to listen for commands if unrecognizable speech is received
     # except sr.UnknownValueError:
     except Exception as e:
         print('waiting . . .  ' +str(e))
         command = myCommand()
+    # Use Google for speech to text.  Google is more accurate than pocketsphinx.  Basically pocetsphinx sucks, but it's a good local engin for a wake word.
+    if "julia" in command:
+        command = r.recognize_google(audio).lower()
+        print('Google thinks you said: ' + command + '\n')
+
     # This tiny line is important. It is returning the command variable with the
     # new value we just set.  It will be used later.
     return command
