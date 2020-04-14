@@ -249,18 +249,30 @@ def assistant(command, playcounter):
 ######## Query Stuff
     elif 'wikipedia' in command:
         talkToMe("Searching Wikipedia . . . ")
+        command = command.replace("julia", "")
+        command = command.replace("julius", "")
         command = command.replace("wikipedia", "")
-        command = command.replace("julia", "")
-        command = command.replace("julia", "")
-        results = wikipedia.summary(command, sentences = 2)
-        talkToMe(results)
+        try:
+            results = wikipedia.summary(command)
+            wikiurl = wikipedia.page(command)
+            webbrowser.open_new_tab(wikiurl.url)
+            print(results)
+            talkToMe(results)
+        except:
+            print("Disambiguation error") 
+            talkToMe("Disambiguation error") 
+
     
 # next command
     elif 'look up' in command:
         talkToMe("Searching Wikipedia . . . ")
         command = command.replace("julia", "")
-        command = command.replace("julia", "")
-        results = wikipedia.summary(command)
+        command = command.replace("julius", "")
+        command = command.replace("look up", "")
+        results = wikipedia.summary(command, sentences = 3)
+        wikiurl = wikipedia.page(command)
+        print(wikiurl.url)
+        webbrowser.open_new_tab(wikiurl.url)
         print(results)
         talkToMe(results)
     
