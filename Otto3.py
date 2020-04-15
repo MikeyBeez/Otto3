@@ -533,7 +533,7 @@ def main():
         #runJulius()
         pass
 
-    aimylStuff()
+    #aimylStuff()
     #print('If you are on Ubuntu, ignore the following ALSA errors')
     #print('pyaudio was compiled on a different linux')
     #print('If you can not bear them, you will need to recompile pyaudio.')
@@ -560,12 +560,12 @@ def main():
                 assistant(output, playcounter)
                 print(output)
 
-            elif 'alice' in output:
-                print('Alice says:')
-                response = brainkernel.respond(output)
-                talkToMe(response)
-                print(response)
-
+#            elif 'alice' in output:
+#                print('Alice says:')
+#                response = brainkernel.respond(output)
+#                talkToMe(response)
+#                print(response)
+#
 #  I removed the following help function and the wake word "help"
 #  It was starting accidentially, triggered by normal conversation.
 #  Now you must say "julia help" to get this functionality.
