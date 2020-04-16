@@ -143,7 +143,7 @@ def myCommand():
         # Here we create the variable command and fill it with text converted from audio.
         #Use pocketsphinx for wake word
         command = r.recognize_sphinx(audio).lower()
-        print('Pocket Stinks thinks you said: ' + command + '\n')
+        print('Pocketsphinx thinks you said: ' + command + '\n')
     # This except block is catching errors if the try block fails.
     # loop back to continue to listen for commands if unrecognizable speech is received
     # except sr.UnknownValueError:
