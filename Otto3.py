@@ -4,9 +4,9 @@
 import pyaudio
 # from pygame import mixer
 from gtts import gTTS
-import aiml
-import speech_recognition as sr
-import pocketsphinx
+#import aiml
+#import speech_recognition as sr
+#import pocketsphinx
 import pyautogui
 import subprocess
 # import socket
@@ -21,6 +21,7 @@ import wikipedia
 from random import randrange
 import psutil
 import sys
+from vosk import Model, KaldiRecognizer
 
 #import smtplib
 #from weather import Weather
@@ -41,19 +42,15 @@ def myVars():
     playcounter = 0
     wakeWord = "julia" 
 
-####Not impemented yet
-def runJulius():
+#####Check Model 
+def CheckModel():
+    if not os.path.exists("model-en"):
+        print ("Please download the model from https://github.com/alphacep/kaldi-android-demo/releases and unpack as 'model-en' in the current folder.")
+        exit(1)
 
-    try:
-        for lineTest in iter(sys.stdin.readline, b''):
-            if "juli" in lineTest:
-                print (lineTest)
-    except KeyboardInterrupt:
-        sys.stdout.flush()
-        pass
+#####End Check Model 
 
-####End Not impemented yet
-
+####Check if a process is already running
 def checkIfProcessRunning(processName):
     '''
     Check if there is any running process that contains the given name processName.
@@ -68,6 +65,8 @@ def checkIfProcessRunning(processName):
             pass
     return False
 
+####End Check if a process is already running
+
 ###############################################################################################
 ######## THIS IS AIML SETUP STUFF
 # aiml is the stuff for the Alice chatbot.
@@ -75,11 +74,11 @@ def checkIfProcessRunning(processName):
 # all the plugin files are in the "standard" subdirectory. 
 
 # make a variable for the file name
-def aimylStuff():
-    BRAIN_FILE="brain.dump"
+#def aimylStuff():
+#    BRAIN_FILE="brain.dump"
 
     # This is creating a kernel object from the imported aiml module
-    brainkernel = aiml.Kernel()
+#    brainkernel = aiml.Kernel()
 
     # To increase the startup speed of the bot, it is
     # possible to save the parsed aiml files as a dump.
@@ -88,14 +87,14 @@ def aimylStuff():
     # Then it saves the brain dump as brain.dump.
 
     # the kernel object we just made is empty.  We need to load it.
-    if os.path.exists(BRAIN_FILE):
-        print("Loading from brain file: " + BRAIN_FILE)
-        brainkernel.loadBrain(BRAIN_FILE)
-    else:
-        print("Parsing aiml files")
-        brainkernel.bootstrap(learnFiles="std-startup.aiml", commands="load aiml b")
-        print("Saving brain file: " + BRAIN_FILE)
-        brainkernel.saveBrain(BRAIN_FILE)
+#    if os.path.exists(BRAIN_FILE):
+#        print("Loading from brain file: " + BRAIN_FILE)
+#        brainkernel.loadBrain(BRAIN_FILE)
+#    else:
+#        print("Parsing aiml files")
+#        brainkernel.bootstrap(learnFiles="std-startup.aiml", commands="load aiml b")
+#        print("Saving brain file: " + BRAIN_FILE)
+#        brainkernel.saveBrain(BRAIN_FILE)
 
 ######## END AIML SETUP STUFF
 
@@ -129,40 +128,24 @@ def talkToMe(mytext):
 
 def myCommand():
     # "listens for commands"
-    # We imported this up above "import speech_recognition as sr"
-    # We create a recognizer object and assign it to the variable r.
-    r = sr.Recognizer()
-    with sr.Microphone() as source:
-        #talkToMe("To get started, you can say julia help.")
-        print("listening")
-        r.pause_threshold = 1
-        r.adjust_for_ambient_noise(source, duration=1)
-        # Here we create the variable audio and fill it with captured audio.
-        audio = r.listen(source)
-    try:
-        # Here we create the variable command and fill it with text converted from audio.
-        #Use pocketsphinx for wake word
-        command = r.recognize_sphinx(audio).lower()
-        print('Pocketsphinx thinks you said: ' + command + '\n')
-    # This except block is catching errors if the try block fails.
-    # loop back to continue to listen for commands if unrecognizable speech is received
-    # except sr.UnknownValueError:
-    except Exception as e:
-        print('waiting . . .  ' +str(e))
-        command = myCommand()
-    # Use Google for speech to text.  Google is more accurate than pocketsphinx.  Basically pocetsphinx sucks, but it's a good local engin for a wake word.
-    try:
-        #if "julia" in command or "alice" in command:
-        if "julia" in command:
-            command = r.recognize_google(audio).lower()
-            print('Google thinks you said: ' + command + '\n')
-
-        # This tiny line is important. It is returning the command variable with the
-        # new value we just set.  It will be used later.
-        return command
-    except Exception as e:
-        print('problem with Google STT')
-        pass
+    # We imported vosk up above.
+    p = pyaudio.PyAudio()
+    stream = p.open(format=pyaudio.paInt16, channels=1, rate=16000, input=True, frames_per_buffer=8000)
+    stream.start_stream()
+    model = Model("model-en")
+    rec = KaldiRecognizer(model, 16000)
+    while True:
+        data = stream.read(2000)
+        if len(data) == 0:
+            break
+        if rec.AcceptWaveform(data):
+        #print(rec.Result())
+        # I commented out this line and added the 3 lines below
+            myResult = rec.Result()
+            myList = myResult.split("text")
+            print(myList[1])
+            command = myList[1]
+            return command
 
 ######## END STT SPEECH TO TEXT FUNCTION THAT RETURNS THE VARIABLE: command
 
@@ -525,13 +508,7 @@ def assistant(command, playcounter):
 ######## START MAIN PROGRAM
 def main():
     myVars()
-    if checkIfProcessRunning('julius'):
-        print("julius is running")
-    else:
-        #linetest = subprocess.call('sh /home/bard/Code/Otto3/catchjuli.sh')
-        #print(linetest)
-        #runJulius()
-        pass
+    CheckModel()
 
     #aimylStuff()
     #print('If you are on Ubuntu, ignore the following ALSA errors')
