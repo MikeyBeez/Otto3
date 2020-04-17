@@ -9,6 +9,7 @@ from gtts import gTTS
 #import pocketsphinx
 import pyautogui
 import subprocess
+#import python-subprocess2
 # import socket
 import os
 # import glob
@@ -282,6 +283,8 @@ def assistant(command, playcounter):
             print(song)
             playthis = 'mpg123 -q ' + song
             subprocess.call(playthis, shell=True)
+            #subprocess.Popen(playthis, shell=True)
+            #proc = Popen([playthis], shell=True, stdin=None, stderr=None, close_fds=True)
             #if checkIfProcessRunning('projectM-pulseaudio'):
             #    print('Yes a projectM process was running')
             #else:
