@@ -144,7 +144,6 @@ def myCommand():
         # I commented out this line and added the 3 lines below
             myResult = rec.Result()
             myList = myResult.split("text")
-            print(myList[1])
             command = myList[1]
             return command
 
@@ -512,18 +511,13 @@ def assistant(command, playcounter):
 def main():
     myVars()
     CheckModel()
-
     #aimylStuff()
     #print('If you are on Ubuntu, ignore the following ALSA errors')
     #print('pyaudio was compiled on a different linux')
     #print('If you can not bear them, you will need to recompile pyaudio.')
     #loop to continue executing multiple commands
-
     #Uncomment the following line for noobs
     #talkToMe("To get started, You can say julia help.")
-    print("To get started, You can say 'Julia help.'")
-    print("To get started, You can say 'Julia help.'")
-    print("To get started, You can say 'Julia help.'")
     print("To get started, You can say 'Julia help.'")
     print("To get started, You can say 'Julia help.'")
     print("To get started, You can say 'Julia help.'")
@@ -531,20 +525,18 @@ def main():
     print("Hello, Sir.  How can I be of assistance?")
 
     while True:
-            output = myCommand()
+        output = myCommand()[3:]
+        if 'juli' in output:
+            print('The Julia responds:\n')
+            assistant(output, playcounter)
+            print(output)
 
-            # Below are the two sections for the three wake words:
-
-            if 'juli' in output:
-                print('The Julia responds:\n')
-                assistant(output, playcounter)
-                print(output)
-
-#            elif 'alice' in output:
-#                print('Alice says:')
-#                response = brainkernel.respond(output)
-#                talkToMe(response)
-#                print(response)
+        elif '""' in output:
+            pass
+#            print('Alice says:')
+#            response = brainkernel.respond(output)
+#            talkToMe(response)
+#            print(response)
 #
 #  I removed the following help function and the wake word "help"
 #  It was starting accidentially, triggered by normal conversation.
@@ -562,10 +554,6 @@ def main():
 #                talkToMe("To repeat this and get the list of commands,")
 #                talkToMe("say, JULIA HELP")
 #                talkToMe("Remember, the list is for the JULIA wake word.")
-#
-#
-            else:
-                pass
 
 ######## END MAIN FUNCTION
 ######## CALL MAIN FUNCTION
