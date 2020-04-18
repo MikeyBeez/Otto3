@@ -1,4 +1,12 @@
 # Otto3
+
+
+#########################################################
+I'm moving this project to a new repository named Juliet.#########################################################
+
+
+
+
 I just installed kaldi and vosk-api.  And I've removed the google cloud STT service.  So if you were using this code, it is now broken for you.  Sorry.  The main branch still has that working code, but the VoskKaldi branch requires that at minimum, you clone vosk-api and pip3 install vosk.  I don't know if you need kaldi or not, as I already had kaldi on my system.
 
 I'm at a crossroads here on 4/11/20.  I have new code that I want to add.  Perhaps it's time to make a new branch?  I want to have a program called julius that does STT recognize my wake word.  That way, I'm not hammering Google all the time.  The problem is, how can I expect other people to install another component piece of software?   I also want to install a flask program to run this so it's not a command line application. At what point does this kind of modern modular programming become too complex?     
