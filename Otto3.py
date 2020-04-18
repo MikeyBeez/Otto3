@@ -312,7 +312,6 @@ def assistant(command, playcounter):
     elif 'hello' in command or 'hi' in command:
         talkToMe('Welcome.  I am Julia, your virtual artificial intelligence assistant.')
         print('Welcome.  I am Julia, your virtual artificial intelligence assistant.')
-        talkToMe('How may I help you?')
         print('How may I help you?')
     
 # next command
@@ -412,14 +411,10 @@ def assistant(command, playcounter):
 ######## Help Section
     elif 'help' in command:
         #talkToMe("There are three different wake words")
-        talkToMe("There are two different wake words")
-        talkToMe("They are Julia, and Alice")
+        talkToMe("The wake word is Julia.")
         talkToMe("Julia runs the listed commands that follow")
         talkToMe("You can always say JULIA HELP.")
         talkToMe("Also, you can always say JULIA list commands.")
-        talkToMe("Alice is a chatbot")
-        talkToMe("You can talk to Alice about anything")
-        talkToMe("But she's dumber than rocks.")
         talkToMe("You can ask Julia to")
 
         with open("commandlist") as file:
@@ -439,68 +434,6 @@ def assistant(command, playcounter):
 ######## Miscelaneous
     elif 'what\'s up' in command:
         talkToMe('Just doing my thing')
-
-# next command
-    # elif 'joke' in command:
-    #     res = requests.get(
-    #             'https://icanhazdadjoke.com/',
-    #             headers={"Accept":"application/json"}
-    #             )
-    #     if res.status_code == requests.codes.ok:
-    #         talkToMe(str(res.json()['joke']))
-    #     else:
-    #         talkToMe('oops!I ran out of jokes')
-
-#     elif 'current weather in' in command:
-#         reg_ex = re.search('current weather in (.*)', command)
-#         if reg_ex:
-#             city = reg_ex.group(1)
-#             weather = Weather()
-#             location = weather.lookup_by_location(city)
-#             condition = location.condition()
-#             talkToMe('The Current weather in %s is %s The tempeture is %.1f degree' % (city, condition.text(), (int(condition.temp())-32)/1.8))
-    #
-    # elif 'weather forecast in' in command:
-    #     reg_ex = re.search('weather forecast in (.*)', command)
-    #     if reg_ex:
-    #         city = reg_ex.group(1)
-    #         weather = Weather()
-    #         location = weather.lookup_by_location(city)
-    #         forecasts = location.forecast()
-    #         for i in range(0,3):
-    #             talkToMe('On %s will it %s. The maximum temperture will be %.1f degree.'
-    #                      'The lowest temperature will be %.1f degrees.' % (forecasts[i].date(), forecasts[i].text(), (int(forecasts[i].high())-32)/1.8, (int(forecasts[i].low())-32)/1.8))
-
-#    elif 'email' in command:
-#        talkToMe('Who is the recipient?')
-#        recipient = myCommand()
-#
-#        talkToMe('What should I say?')
-#        content = myCommand()
-#
-#        #init gmail SMTP
-#        mail = smtplib.SMTP('smtp.gmail.com', 587)
-#
-#        #identify to server
-#        mail.ehlo()
-#
-#        #encrypt session
-#        mail.starttls()
-#
-#        #login
-#        mail.login('username', 'password')
-#
-#        #send message
-#        mail.sendmail('John Fisher', 'JARVIS2.0@protonmail.com', content)
-#
-#        #end mail connection
-#        mail.close()
-#
-#        talkToMe('Email sent.')
-#
-#    else:
-#        talkToMe('I don\'t know what you mean!')
-#
 ######## End Miscelaneous Section
 
 ######## END GIGANTIC ASSISTANT FUNCTION
@@ -511,10 +444,6 @@ def assistant(command, playcounter):
 def main():
     myVars()
     CheckModel()
-    #aimylStuff()
-    #print('If you are on Ubuntu, ignore the following ALSA errors')
-    #print('pyaudio was compiled on a different linux')
-    #print('If you can not bear them, you will need to recompile pyaudio.')
     #loop to continue executing multiple commands
     #Uncomment the following line for noobs
     #talkToMe("To get started, You can say julia help.")
@@ -533,27 +462,6 @@ def main():
 
         elif '""' in output:
             pass
-#            print('Alice says:')
-#            response = brainkernel.respond(output)
-#            talkToMe(response)
-#            print(response)
-#
-#  I removed the following help function and the wake word "help"
-#  It was starting accidentially, triggered by normal conversation.
-#  Now you must say "julia help" to get this functionality.
-#
-#            elif 'help' in output:
-#                talkToMe("There are three different wake words")
-#                talkToMe("They are Help, Julia, and Alice")
-#                talkToMe("Julia runs the listed commands that follow")
-#                talkToMe("Also, you can always say JULIA list commands.")
-#                talkToMe("Alice is a chatbot")
-#                talkToMe("You can talk to Alice about anything")
-#                talkToMe("But she's dumber than rocks.")
-#                talkToMe("Say ALICE, what's the capital of England?")
-#                talkToMe("To repeat this and get the list of commands,")
-#                talkToMe("say, JULIA HELP")
-#                talkToMe("Remember, the list is for the JULIA wake word.")
 
 ######## END MAIN FUNCTION
 ######## CALL MAIN FUNCTION
