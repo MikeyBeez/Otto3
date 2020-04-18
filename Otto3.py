@@ -41,7 +41,7 @@ def myVars():
     myDir = os.getcwd()
     global playcounter 
     playcounter = 0
-    wakeWord = "julia" 
+    wakeWord = "juli" 
 
 #####Check Model 
 def CheckModel():
